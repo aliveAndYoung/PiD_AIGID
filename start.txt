@@ -1,0 +1,2 @@
+this project is an implementation for the algorithm discussed in  "PiD: Generalized AI-Generated Images Detection with Pixelwise Decomposition Residuals"
+as a Generalized approach for detecting ai generated images AIGI
