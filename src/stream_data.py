@@ -1,69 +1,84 @@
-import os
+import io
 import torch
+from PIL import Image
 from datasets import load_dataset
-from huggingface_hub import login
-from torch.utils.data import DataLoader
-from torchvision import transforms
-from src.pid import apply_pid_algorithm
 
-def prepare_dataloaders(batch_size=32):
-    # 1. Login to Hugging Face
-    hf_token = os.environ.get("HF_TOKEN")
-    if hf_token:
-        login(token=hf_token)
-        print("Logged into Hugging Face successfully.")
-    else:
-        print("Warning: No HF_TOKEN found in environment variables.")
+# --- Globals ---
+# Dataset total size is ~2.13M. 20% for test is ~426,000.
+_FULL_STREAM = load_dataset("nebula/GenImage-arrow", split="train", streaming=True)
+_CACHED_VAL_TENSORS = None
+_CACHED_VAL_LABELS = None
 
-    # 2. Connect to streaming dataset
-    print("Connecting to GenImage-arrow dataset stream...")
-    ds = load_dataset("nebula/GenImage-arrow", split="train", streaming=True)
-    
-    # 3. Calculate split sizes based on 2,144,000 total rows
-    total_rows = 2144000
-    train_size = int(total_rows * 0.70)  # 1,500,800
-    val_size = int(total_rows * 0.15)    # 321,600
-    test_size = int(total_rows * 0.15)   # 321,600
-
-    # 4. Standard PyTorch ImageNet transforms (applied after PiD)
-    tensor_transform = transforms.Compose([
-        transforms.ToTensor(), # Converts uint8 (0-255) to float (0-1) [C, H, W]
-        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-    ])
-
-    # 5. The Mapping Function (Runs in real-time during streaming)
-    def apply_pipeline(examples):
-        processed_images = []
-        for img in examples['image']:
-            # Apply PiD algorithm
-            residual_img = apply_pid_algorithm(img)
-            # Convert to PyTorch Tensor format
-            tensor_img = tensor_transform(residual_img)
-            processed_images.append(tensor_img)
+def _process_pil(sample):
+    """Internal helper: Resizes and extracts label from path."""
+    try:
+        img_data = sample['image']
+        if isinstance(img_data, dict) and 'bytes' in img_data:
+            img_data = img_data['bytes']
         
-        examples['pixel_values'] = processed_images
-        return examples
+        img = Image.open(io.BytesIO(img_data)).convert("RGB")
+        img = img.resize((224, 224))
+        
+        path = sample.get('image_path', '')
+        label = 1 if '/ai/' in path.lower() else 0
+        return img, label
+    except Exception as e:
+        return None, None
 
-    # Apply the map function
-    ds = ds.map(apply_pipeline, batched=True, remove_columns=["image"])
+def __init_val_cache__():
+    """Caches first 1000 images as tensors in RAM."""
+    global _CACHED_VAL_TENSORS, _CACHED_VAL_LABELS
+    print("--- Initializing Validation Cache (1000 images) ---")
+    val_samples = list(_FULL_STREAM.take(1000))
+    temp_images, temp_labels = [], []
+    
+    for s in val_samples:
+        img, lbl = _process_pil(s)
+        if img is not None:
+            # CPU tensor conversion for the fixed cache
+            img_t = torch.tensor(list(img.getdata())).view(224, 224, 3).permute(2, 0, 1).float() / 255.0
+            temp_images.append(img_t)
+            temp_labels.append(lbl)
+    
+    _CACHED_VAL_TENSORS = torch.stack(temp_images)
+    _CACHED_VAL_LABELS = torch.tensor(temp_labels)
 
-    # 6. Execute the Splits
-    train_ds = ds.take(train_size)
-    val_ds = ds.skip(train_size).take(val_size)
-    test_ds = ds.skip(train_size + val_size).take(test_size)
+def get_val_split():
+    """Returns (Tensors, Tensors) for validation."""
+    if _CACHED_VAL_TENSORS is None:
+        __init_val_cache__()
+    return _CACHED_VAL_TENSORS, _CACHED_VAL_LABELS
 
-    # Shuffle training set (buffer 5000 is safe for streaming RAM)
-    train_ds = train_ds.shuffle(seed=42, buffer_size=5000)
+def get_test_split():
+    """Generator for PIL images: Skip 1000, take 20%."""
+    test_offset = int(0.20 * 2130000)
+    test_stream = _FULL_STREAM.skip(1000).take(test_offset)
+    for sample in test_stream:
+        img, lbl = _process_pil(sample)
+        if img: yield img, lbl
 
-    # 7. Collate Function for DataLoader
-    def collate_fn(batch):
-        pixel_values = torch.stack([torch.tensor(item['pixel_values']) for item in batch])
-        labels = torch.tensor([item['label'] for item in batch])
-        return {'pixel_values': pixel_values, 'labels': labels}
-
-    # 8. Create DataLoaders
-    train_loader = DataLoader(train_ds, batch_size=batch_size, collate_fn=collate_fn)
-    val_loader = DataLoader(val_ds, batch_size=batch_size, collate_fn=collate_fn)
-    test_loader = DataLoader(test_ds, batch_size=batch_size, collate_fn=collate_fn)
-
-    return train_loader, val_loader, test_loader
+def get_train_split(batch_size, resume_from_batch=0):
+    """
+    Generator for lists of PIL images.
+    Skips Val, Test, and any batches already completed.
+    """
+    test_offset = int(0.20 * 2130000)
+    base_offset = 1000 + test_offset
+    
+    # Calculate skip based on previous progress
+    training_progress_offset = resume_from_batch * batch_size
+    total_skip = base_offset + training_progress_offset
+    
+    print(f"Streaming: Skipping {total_skip} images (Resuming from batch {resume_from_batch})...")
+    train_stream = _FULL_STREAM.skip(total_skip)
+    
+    batch_images, batch_labels = [], []
+    for sample in train_stream:
+        img, lbl = _process_pil(sample)
+        if img:
+            batch_images.append(img)
+            batch_labels.append(lbl)
+        
+        if len(batch_images) == batch_size:
+            yield batch_images, batch_labels
+            batch_images, batch_labels = [], []
