@@ -1,7 +1,18 @@
 import numpy as np
 import cv2
 
+
+
+
+
 def apply_pid_algorithm(image):
+    """ 
+    YET TO BE ALTERED
+    
+        (NOT READY)     
+    
+    """
+
     
     # 1. Convert PIL to numpy if necessary and handle color channels
     img = np.array(image)
