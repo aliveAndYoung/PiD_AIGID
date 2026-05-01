@@ -6,7 +6,7 @@ import stream_data
 import batched_pid
 import model as model_manager
 
-BATCH_SIZE = 32
+BATCH_SIZE = 128
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def train():
@@ -44,7 +44,8 @@ def train():
         optimizer.step()
 
         if current_batch_idx % 10 == 0:
-            print(f"\rBatch {current_batch_idx} | Current Loss: {loss.item():.4f}", end="")
+          print(f"Batch {current_batch_idx} | Current Loss: {loss.item():.4f}")
+            
 
 def run_val_cycle(model, criterion, batch_idx, optimizer):
     """
@@ -54,24 +55,35 @@ def run_val_cycle(model, criterion, batch_idx, optimizer):
 
     model.eval()    
     # retrieve the cahced tensors
-    val_images, val_labels = stream_data.get_val_split()
-    # move to GPU
-    val_images = val_images.to(DEVICE)
-    val_labels = val_labels.to(DEVICE)
+    val_images_full, val_labels_full = stream_data.get_val_split()
+    
+    total_loss = 0.0
+    correct = 0
+    total = 0
+    val_batch_size = 128
     
     with torch.no_grad():
-        # get residuals and normalize 
-        pid_val = batched_pid.get_residuals(val_images)
-        # forward
-        val_outputs = model(pid_val)
-        val_loss = criterion(val_outputs, val_labels)        
-        # calculate Accuracy
-        _, predicted = torch.max(val_outputs.data, 1)
-        total = val_labels.size(0)
-        correct = (predicted == val_labels).sum().item()
-        acc = 100 * correct / total
+        for i in range(0, len(val_images_full), val_batch_size):
+            # move current chunk to GPU
+            val_images = val_images_full[i : i + val_batch_size].to(DEVICE)
+            val_labels = val_labels_full[i : i + val_batch_size].to(DEVICE)
 
-    print(f"[Validation] Loss: {val_loss.item():.4f} | Accuracy: {acc:.2f}%")
+            # get residuals and normalize 
+            pid_val = batched_pid.get_residuals(val_images)
+            # forward
+            val_outputs = model(pid_val)
+            val_loss = criterion(val_outputs, val_labels)        
+            
+            # calculate Accuracy
+            total_loss += val_loss.item() * val_images.size(0)
+            _, predicted = torch.max(val_outputs.data, 1)
+            total += val_labels.size(0)
+            correct += (predicted == val_labels).sum().item()
+
+    avg_loss = total_loss / total
+    acc = 100 * correct / total
+
+    print(f"[Validation] Loss: {avg_loss:.4f} | Accuracy: {acc:.2f}%")
     # save checkpoint
     model_manager.save_checkpoint(model, optimizer, batch_idx)
 

@@ -41,7 +41,6 @@ def __init_val_cache__():
         img, lbl = _process_pil(s)
         if img is not None:
             # CPU tensor conversion for the fixed cache
-            # img_t = torch.tensor(list(img.getdata())).view(224, 224, 3).permute(2, 0, 1).float() / 255.0
             img_t = torch.from_numpy(np.array(img)).permute(2, 0, 1).float() / 255.0
             temp_images.append(img_t)
             temp_labels.append(lbl)
@@ -55,15 +54,15 @@ def get_val_split():
         __init_val_cache__()
     return _CACHED_VAL_TENSORS, _CACHED_VAL_LABELS
 
-
 def get_test_split(batch_size=32):
     """
-    generate batchs from the test split 
-    skip 1000 , take 20%  return batch of 32 by default 
-    
+    Generates batches from the final 20% of the dataset.
+    Skips the validation and training portions.
     """
-    test_offset = int(0.20 * 2130000)
-    test_stream = _FULL_STREAM.skip(1000).take(test_offset)
+    total_size = 2130000
+    test_offset = int(0.20 * total_size)
+    test_skip = total_size - test_offset
+    test_stream = _FULL_STREAM.skip(test_skip)
     
     batch_images, batch_labels = [], []
     for sample in test_stream:
@@ -75,22 +74,24 @@ def get_test_split(batch_size=32):
         if len(batch_images) == batch_size:
             yield batch_images, batch_labels
             batch_images, batch_labels = [], []
-            
-            
-def get_train_split(batch_size = 32, resume_from_batch=0):
-    """
-    generate batchs for training
-    skips val (1000) , test(20%)  and sends a randomly accessed indexed batch 
-    """
-    test_offset = int(0.20 * 2130000)
-    base_offset = 1000 + test_offset
-    training_progress_offset = resume_from_batch * batch_size
 
+def get_train_split(batch_size=32, resume_from_batch=0):
+    """
+    Generates batches for training.
+    Skips the 1000 validation images and handles resuming from a specific batch.
+    """
+    base_offset = 1000 
+    training_progress_offset = resume_from_batch * batch_size
     total_skip = base_offset + training_progress_offset
     
     print(f"Streaming: Skipping {total_skip} images (Resuming from batch {resume_from_batch})...")
     
-    train_stream = _FULL_STREAM.skip(total_skip)
+    total_dataset_size = 2130000
+    test_count = int(0.20 * total_dataset_size)
+    train_total_available = total_dataset_size - base_offset - test_count
+    
+    # Take only what remains in the training split
+    train_stream = _FULL_STREAM.skip(total_skip).take(train_total_available - training_progress_offset)
     
     batch_images, batch_labels = [], []
     for sample in train_stream:

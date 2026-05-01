@@ -25,7 +25,7 @@ def get_model(device, optimizer_to_init=None):
     model = _init_architecture().to(device)
     
     # set up for optimizer ( stochastic gradient descent )
-    optimizer = torch.optim.SGD(model.parameters(), lr=1e-3, momentum=0.9)
+    optimizer = torch.optim.SGD(model.parameters(), lr=1e-4, momentum=0.9)
     if optimizer_to_init:
         optimizer = optimizer_to_init
 
