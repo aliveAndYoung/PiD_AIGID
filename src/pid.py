@@ -23,6 +23,7 @@ def apply_pid_algorithm(image):
     
     # 2. Standardize dimensions
     img_standard = cv2.resize(img, (500, 500))
+    # 224 *224
     img_float = img_standard.astype(np.float32)
 
     # 3. YUV Transformation Matrix (Mt) from the paper
@@ -31,6 +32,7 @@ def apply_pid_algorithm(image):
         [-0.168736, -0.331264, 0.5],
         [0.5, -0.418688, -0.081312]
     ])
+    # 1x3 * 3x3 ==> 1x3
 
     # Move to YUV
     pixels = img_float.reshape(-1, 3)
