@@ -3,7 +3,7 @@ import torch
 import numpy as np
 from PIL import Image
 from datasets import load_dataset
-import apply_pid_algorithm as pid
+import pid as pid
 
 # Update dataset limit to 1,280,000 rows
 _FULL_STREAM = load_dataset("nebula/GenImage-arrow", split="train", streaming=True).take(1_280_000)
@@ -45,7 +45,7 @@ def __init_val_cache__():
         img, lbl = _process_pil(s)
         if img is not None:
             # Apply PiD algorithm and convert to tensor
-            img_residual = pid(img)
+            img_residual = pid.apply_pid_algorithm(img)
             img_t = torch.from_numpy(np.array(img_residual)).permute(2, 0, 1).float() / 255.0
             temp_images.append(img_t)
             temp_labels.append(lbl)
