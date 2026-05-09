@@ -48,7 +48,8 @@ def train():
                     # Apply PiD algorithm
                     residual = pid_module.apply_pid_algorithm(img)
                     # Convert to tensor: (H, W, C) -> (C, H, W) and normalize to 0-1
-                    res_t = torch.from_numpy(residual).permute(2, 0, 1).float() / 255.0
+                    # res_t = torch.from_numpy(residual).permute(2, 0, 1).float() / 255.0
+                    res_t = torch.from_numpy(residual).permute(2, 0, 1).float() 
                     processed_list.append(res_t)
                 
                 inputs = torch.stack(processed_list).to(DEVICE)

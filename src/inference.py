@@ -46,8 +46,34 @@ def infer_image(image_path):
     class_label = "AI-Generated" if predicted == 1 else "Human-Generated"
     confidence = probabilities[predicted] * 100
     print(f"[INFERENCE RESULT] The model thinks this image is {confidence:.2f}% {class_label}.")
+
+
+
+
+
+# 1. Convert the PIL display image to a NumPy array and swap RGB to BGR
+    cv_original = cv2.cvtColor(np.array(display_image), cv2.COLOR_RGB2BGR)
+
+    # 2. Prepare the residual image (ensure it's in BGR for OpenCV)
+    # If the pid algorithm returns RGB, convert it:
+    cv_residual = cv2.cvtColor(np.array(residual), cv2.COLOR_RGB2BGR)
+
+    # 3. Stack images horizontally to see them side-by-side
+    # combined_view = np.hstack((cv_original, cv_residual))
+
+    cv2.imshow( "original", cv_original)
+    cv2.imshow( "res", cv_residual)
+
+    # 4. Create a window and show the result
+    # window_name = f"Result: {class_label} ({confidence:.2f}%)"
+    # cv2.imshow(window_name, combined_view)
+
+
+
+
+
         # Display the original and residual images
-    plt.figure(figsize=(10, 5))
+    plt.figure(figsize=(8, 4))
     plt.subplot(1, 2, 1)
     plt.title("Original Image (224x224)")
     plt.imshow(display_image)
@@ -58,6 +84,11 @@ def infer_image(image_path):
     plt.imshow(residual)
     plt.axis("off")
     plt.show()
+    print("Press any key on the image window to close it...")
+    cv2.waitKey(0)  # Wait for a key press to close
+    cv2.destroyAllWindows()
+
+
 
 if __name__ == "__main__":
     # Example usage

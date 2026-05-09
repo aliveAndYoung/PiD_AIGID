@@ -46,7 +46,8 @@ def __init_val_cache__():
         if img is not None:
             # Apply PiD algorithm and convert to tensor
             img_residual = pid.apply_pid_algorithm(img)
-            img_t = torch.from_numpy(np.array(img_residual)).permute(2, 0, 1).float() / 255.0
+            # img_t = torch.from_numpy(np.array(img_residual)).permute(2, 0, 1).float() / 255.0
+            img_t = torch.from_numpy(np.array(img_residual)).permute(2, 0, 1).float() 
             temp_images.append(img_t)
             temp_labels.append(lbl)
             

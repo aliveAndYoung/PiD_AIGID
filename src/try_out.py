@@ -51,6 +51,7 @@ def apply_pid_algorithm(image):
     residual =  img_float - img_altered
     # resize to 224x224 this is bad actually but essential for the model
     residual_resized = cv2.resize(residual, (224, 224), interpolation=cv2.INTER_AREA)
+    residual_resized = residual_resized/255.0
     # residual_resized = cv2.resize(residual, (224, 224), interpolation=cv2.INTER_LANCZOS4)
     
     return residual_resized
