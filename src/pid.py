@@ -38,8 +38,9 @@ def apply_pid_algorithm(image):
     recovered_pixels = np.dot(yuv_quantized, Mt_inv.T)
     # another quantization but rounding this time
     _recovered_pixels = np.round(recovered_pixels)
-    # clipping to 0-255
-    clipped_pixels = np.clip(_recovered_pixels, 0, 255).astype(np.float32)
+    # # clipping to 0-255
+    # clipped_pixels = np.clip(_recovered_pixels, 0, 255).astype(np.float32)
+    clipped_pixels = _recovered_pixels.astype(np.float32)
     # get back to the original dimensions
     img_altered = clipped_pixels.reshape(img.shape)
     # get the residual

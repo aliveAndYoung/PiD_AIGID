@@ -43,11 +43,12 @@ def apply_pid_algorithm(image):
     # another quantization round
     _recovered_pixels = np.round(recovered_pixels)
     # clipping to 0-255
-    clipped_pixels = np.clip(_recovered_pixels, 0, 255).astype(np.float32)
+    # clipped_pixels = np.clip(_recovered_pixels, 0, 255).astype(np.float32)
+    clipped_pixels = recovered_pixels.astype(np.float32)
     # get back to the original dimensions
     img_altered = clipped_pixels.reshape(img.shape)
     # get the residual
-    residual =  np.abs(img_float - img_altered)
+    residual =  img_float - img_altered
     # resize to 224x224 this is bad actually but essential for the model
     residual_resized = cv2.resize(residual, (224, 224), interpolation=cv2.INTER_AREA)
     # residual_resized = cv2.resize(residual, (224, 224), interpolation=cv2.INTER_LANCZOS4)
