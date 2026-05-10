@@ -18,7 +18,8 @@ def infer_image(image_path):
         image_path (str): Path to the input image.
     """
     # Load and preprocess the image
-    original_image = Image.open(image_path).convert("RGB")
+    # original_image = Image.open(image_path).convert("RGB")
+    original_image = Image.open(image_path)
 
     # Resize the image for display purposes (224x224)
     display_image = original_image.resize((224, 224))
@@ -29,7 +30,8 @@ def infer_image(image_path):
 
 
     # Convert residual to tensor
-    residual_tensor = torch.from_numpy(residual).permute(2, 0, 1).float() / 255.0
+    # residual_tensor = torch.from_numpy(residual).permute(2, 0, 1).float() / 255.0
+    residual_tensor = torch.from_numpy(residual).permute(2, 0, 1).float() 
     residual_tensor = residual_tensor.unsqueeze(0).to(DEVICE)  # Add batch dimension
 
     # Load the latest model checkpoint
@@ -92,5 +94,5 @@ def infer_image(image_path):
 
 if __name__ == "__main__":
     # Example usage
-    image_path = "F:/projects/PiD_AIGID/images/fake_1.jpg"  # Replace with the actual image path
+    image_path = "F:/projects/PiD_AIGID/images/fake_2.png"  # Replace with the actual image path
     infer_image(image_path)
