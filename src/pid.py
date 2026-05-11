@@ -1,5 +1,6 @@
 import numpy as np
 import cv2
+from PIL import Image
 
 def apply_pid_algorithm(image):
     """
@@ -8,13 +9,20 @@ def apply_pid_algorithm(image):
     """
     # loads the image that is already processed by
     # _process_pil @stream_data and ensured it is rgb 
-    # but cant hurt to ensure again lol  
-    img = np.array(image)
+    # but cant hurt to ensure again lol   
+    
+  
+    img_pil = image
+    img_pil = img_pil.resize((256, 256), resample=Image.LANCZOS )
+    # img_pil = img_pil.resize((256, 256), resample=Image.BICUBIC)
+    img = np.array(img_pil)
+   
+
     if img.ndim == 2:
         img = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
     elif img.shape[2] == 4:
         img = cv2.cvtColor(img, cv2.COLOR_RGBA2RGB)
-    #  ensures the image is in float32 to have decimal points that leads to precision loss (residual)   
+    #  ensures the image is in float32 to have decimal points that leads to precision loss (residual)    
     img_float = img.astype(np.float32)
     # standard transforming matrix  RBG --> YUV
     Mt = np.array([
@@ -45,9 +53,6 @@ def apply_pid_algorithm(image):
     img_altered = clipped_pixels.reshape(img.shape)
     # get the residual
     residual = img_float - img_altered
-    # resize to 224x224 this is bad actually but essential for the model
-    residual_resized = cv2.resize(residual, (224, 224), interpolation=cv2.INTER_AREA)
     
-    return residual_resized
-
-
+    
+    return residual

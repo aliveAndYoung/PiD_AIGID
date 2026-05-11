@@ -63,8 +63,8 @@ def infer_image(image_path):
     # 3. Stack images horizontally to see them side-by-side
     # combined_view = np.hstack((cv_original, cv_residual))
 
-    cv2.imshow( "original", cv_original)
-    cv2.imshow( "res", cv_residual)
+    # cv2.imshow( "original", cv_original)
+    # cv2.imshow( "res", cv_residual)
 
     # 4. Create a window and show the result
     # window_name = f"Result: {class_label} ({confidence:.2f}%)"
@@ -94,5 +94,17 @@ def infer_image(image_path):
 
 if __name__ == "__main__":
     # Example usage
-    image_path = "F:/projects/PiD_AIGID/images/fake_2.png"  # Replace with the actual image path
+    # image_path = "F:/projects/PiD_AIGID/images/real_1.jpg"  # Replace with the actual image path
+    # image_path = "F:/projects/PiD_AIGID/images/real_2.jpg"  # Replace with the actual image path
+    image_path = "F:/projects/PiD_AIGID/images/real_3.jpg"  # Replace with the actual image path
+    # image_path = "F:/projects/PiD_AIGID/images/fake_1.jpg"  # Replace with the actual image path
+    # image_path = "F:/projects/PiD_AIGID/images/fake_2.png"  # Replace with the actual image path
+    # image_path = "F:/projects/PiD_AIGID/images/fake_3.png"  # Replace with the actual image path
+    # image_path = "F:/projects/PiD_AIGID/images/fake_4.jpeg"  # Replace with the actual image path
+    # image_path = "F:/projects/PiD_AIGID/images/fake_5.jpg"  # Replace with the actual image path
+    # image_path = "F:/projects/PiD_AIGID/images/fake_6.jpeg"  # Replace with the actual image path
+    # image_path = "F:/projects/PiD_AIGID/images/fake_7.png"  # Replace with the actual image path
+    # image_path = "F:/projects/PiD_AIGID/images/fake_8.png"  # Replace with the actual image path
+    # image_path = "F:/projects/PiD_AIGID/images/fake_9.png"  # Replace with the actual image path
+    # image_path = "F:/projects/PiD_AIGID/images/fake_10.jpg"  # Replace with the actual image pat    h
     infer_image(image_path)

@@ -15,12 +15,12 @@ def _init_architecture():
     """
     model = resnet50(weights=ResNet50_Weights.DEFAULT)
     
-    # 1. Modify the first conv layer (conv1)
-    # Re-initialize with Kaiming Normal, no bias
-    nn.init.kaiming_normal_(model.conv1.weight, mode='fan_out', nonlinearity='relu')
-    if model.conv1.bias is not None:
-        # ResNet-50 conv1 typically has no bias by default, but we ensure it's gone
-        model.conv1.bias = None
+    # # 1. Modify the first conv layer (conv1)
+    # # Re-initialize with Kaiming Normal, no bias
+    # nn.init.kaiming_normal_(model.conv1.weight, mode='fan_out', nonlinearity='relu')
+    # if model.conv1.bias is not None:
+    #     # ResNet-50 conv1 typically has no bias by default, but we ensure it's gone
+    #     model.conv1.bias = None
 
     # 2. Modify the final layer (fc)
     num_ftrs = model.fc.in_features
@@ -38,12 +38,13 @@ def get_model(device):
     Returns: model, start_shard, start_epoch, optimizer
     """
     model = _init_architecture().to(device)
-    optimizer = torch.optim.SGD(model.parameters(), lr=0.001)
+    # optimizer = torch.optim.SGD(model.parameters(), lr=0.001)
+    optimizer = torch.optim.SGD(model.parameters(), lr=0.0001)
 
     checkpoint_files = glob.glob(os.path.join(CHECKPOINT_DIR, "checkpoint_shard_*.pth"))
     
     if not checkpoint_files:
-        print("--- No checkpoint found. Starting fresh training (LR=0.001, Kaiming Init on Conv1). ---")
+        print("--- No checkpoint found. Starting fresh training (LR=0.0001). ---")
         return model, 20, 0, optimizer # Default start shard is 20
 
     # Load the single existing checkpoint
