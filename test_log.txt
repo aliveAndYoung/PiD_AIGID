@@ -1,0 +1,162 @@
+======================================================================================================================
+                                                                                                                                            testing
+======================================================================================================================
+
+--- Loading checkpoint: checkpoint_shard_106.pth ---
+--- Resuming from Shard 106, Epoch 0 ---
+
+[SYSTEM] Starting Testing Pipeline
+[PROGRESS] Shard 1 | Batch 10/100 | Total Samples: 640 | Correct: 599
+[PROGRESS] Shard 1 | Batch 20/100 | Total Samples: 1280 | Correct: 1210
+[PROGRESS] Shard 1 | Batch 30/100 | Total Samples: 1920 | Correct: 1816
+[PROGRESS] Shard 1 | Batch 40/100 | Total Samples: 2560 | Correct: 2412
+[PROGRESS] Shard 1 | Batch 50/100 | Total Samples: 3200 | Correct: 3008
+[PROGRESS] Shard 1 | Batch 60/100 | Total Samples: 3840 | Correct: 3611
+[PROGRESS] Shard 1 | Batch 70/100 | Total Samples: 4480 | Correct: 4210
+[PROGRESS] Shard 1 | Batch 80/100 | Total Samples: 5120 | Correct: 4810
+[PROGRESS] Shard 1 | Batch 90/100 | Total Samples: 5760 | Correct: 5410
+[PROGRESS] Shard 1 | Batch 0/100 | Total Samples: 6400 | Correct: 6006
+[RESULT] Shard 1 Accuracy: 93.84%
+[PROGRESS] Shard 2 | Batch 10/100 | Total Samples: 640 | Correct: 601
+[PROGRESS] Shard 2 | Batch 20/100 | Total Samples: 1280 | Correct: 1200
+[PROGRESS] Shard 2 | Batch 30/100 | Total Samples: 1920 | Correct: 1803
+[PROGRESS] Shard 2 | Batch 40/100 | Total Samples: 2560 | Correct: 2408
+[PROGRESS] Shard 2 | Batch 50/100 | Total Samples: 3200 | Correct: 3005
+[PROGRESS] Shard 2 | Batch 60/100 | Total Samples: 3840 | Correct: 3602
+[PROGRESS] Shard 2 | Batch 70/100 | Total Samples: 4480 | Correct: 4200
+[PROGRESS] Shard 2 | Batch 80/100 | Total Samples: 5120 | Correct: 4792
+[PROGRESS] Shard 2 | Batch 90/100 | Total Samples: 5760 | Correct: 5398
+[PROGRESS] Shard 2 | Batch 0/100 | Total Samples: 6400 | Correct: 5996
+[RESULT] Shard 2 Accuracy: 93.69%
+[PROGRESS] Shard 3 | Batch 10/100 | Total Samples: 640 | Correct: 603
+[PROGRESS] Shard 3 | Batch 20/100 | Total Samples: 1280 | Correct: 1200
+[PROGRESS] Shard 3 | Batch 30/100 | Total Samples: 1920 | Correct: 1815
+[PROGRESS] Shard 3 | Batch 40/100 | Total Samples: 2560 | Correct: 2404
+[PROGRESS] Shard 3 | Batch 50/100 | Total Samples: 3200 | Correct: 2997
+[PROGRESS] Shard 3 | Batch 60/100 | Total Samples: 3840 | Correct: 3594
+[PROGRESS] Shard 3 | Batch 70/100 | Total Samples: 4480 | Correct: 4188
+[PROGRESS] Shard 3 | Batch 80/100 | Total Samples: 5120 | Correct: 4792
+[PROGRESS] Shard 3 | Batch 90/100 | Total Samples: 5760 | Correct: 5387
+[PROGRESS] Shard 3 | Batch 0/100 | Total Samples: 6400 | Correct: 5992
+[RESULT] Shard 3 Accuracy: 93.62%
+[PROGRESS] Shard 4 | Batch 10/100 | Total Samples: 640 | Correct: 600
+[PROGRESS] Shard 4 | Batch 20/100 | Total Samples: 1280 | Correct: 1202
+[PROGRESS] Shard 4 | Batch 30/100 | Total Samples: 1920 | Correct: 1807
+[PROGRESS] Shard 4 | Batch 40/100 | Total Samples: 2560 | Correct: 2403
+[PROGRESS] Shard 4 | Batch 50/100 | Total Samples: 3200 | Correct: 3003
+[PROGRESS] Shard 4 | Batch 60/100 | Total Samples: 3840 | Correct: 3616
+[PROGRESS] Shard 4 | Batch 70/100 | Total Samples: 4480 | Correct: 4219
+[PROGRESS] Shard 4 | Batch 80/100 | Total Samples: 5120 | Correct: 4817
+[PROGRESS] Shard 4 | Batch 90/100 | Total Samples: 5760 | Correct: 5413
+[PROGRESS] Shard 4 | Batch 0/100 | Total Samples: 6400 | Correct: 6012
+[RESULT] Shard 4 Accuracy: 93.94%
+[PROGRESS] Shard 5 | Batch 10/100 | Total Samples: 640 | Correct: 605
+[PROGRESS] Shard 5 | Batch 20/100 | Total Samples: 1280 | Correct: 1203
+[PROGRESS] Shard 5 | Batch 30/100 | Total Samples: 1920 | Correct: 1803
+[PROGRESS] Shard 5 | Batch 40/100 | Total Samples: 2560 | Correct: 2396
+[PROGRESS] Shard 5 | Batch 50/100 | Total Samples: 3200 | Correct: 3000
+[PROGRESS] Shard 5 | Batch 60/100 | Total Samples: 3840 | Correct: 3612
+[PROGRESS] Shard 5 | Batch 70/100 | Total Samples: 4480 | Correct: 4211
+[PROGRESS] Shard 5 | Batch 80/100 | Total Samples: 5120 | Correct: 4821
+[PROGRESS] Shard 5 | Batch 90/100 | Total Samples: 5760 | Correct: 5417
+[PROGRESS] Shard 5 | Batch 0/100 | Total Samples: 6400 | Correct: 6017
+[RESULT] Shard 5 Accuracy: 94.02%
+[PROGRESS] Shard 6 | Batch 10/100 | Total Samples: 640 | Correct: 598
+[PROGRESS] Shard 6 | Batch 20/100 | Total Samples: 1280 | Correct: 1191
+[PROGRESS] Shard 6 | Batch 30/100 | Total Samples: 1920 | Correct: 1791
+[PROGRESS] Shard 6 | Batch 40/100 | Total Samples: 2560 | Correct: 2390
+[PROGRESS] Shard 6 | Batch 50/100 | Total Samples: 3200 | Correct: 2995
+[PROGRESS] Shard 6 | Batch 60/100 | Total Samples: 3840 | Correct: 3587
+[PROGRESS] Shard 6 | Batch 70/100 | Total Samples: 4480 | Correct: 4186
+[PROGRESS] Shard 6 | Batch 80/100 | Total Samples: 5120 | Correct: 4781
+[PROGRESS] Shard 6 | Batch 90/100 | Total Samples: 5760 | Correct: 5374
+[PROGRESS] Shard 6 | Batch 0/100 | Total Samples: 6400 | Correct: 5977
+[RESULT] Shard 6 Accuracy: 93.39%
+[PROGRESS] Shard 7 | Batch 10/100 | Total Samples: 640 | Correct: 604
+[PROGRESS] Shard 7 | Batch 20/100 | Total Samples: 1280 | Correct: 1202
+[PROGRESS] Shard 7 | Batch 30/100 | Total Samples: 1920 | Correct: 1807
+[PROGRESS] Shard 7 | Batch 40/100 | Total Samples: 2560 | Correct: 2408
+[PROGRESS] Shard 7 | Batch 50/100 | Total Samples: 3200 | Correct: 3003
+[PROGRESS] Shard 7 | Batch 60/100 | Total Samples: 3840 | Correct: 3601
+[PROGRESS] Shard 7 | Batch 70/100 | Total Samples: 4480 | Correct: 4198
+[PROGRESS] Shard 7 | Batch 80/100 | Total Samples: 5120 | Correct: 4804
+[PROGRESS] Shard 7 | Batch 90/100 | Total Samples: 5760 | Correct: 5414
+[PROGRESS] Shard 7 | Batch 0/100 | Total Samples: 6400 | Correct: 6020
+[RESULT] Shard 7 Accuracy: 94.06%
+[PROGRESS] Shard 8 | Batch 10/100 | Total Samples: 640 | Correct: 606
+[PROGRESS] Shard 8 | Batch 20/100 | Total Samples: 1280 | Correct: 1202
+[PROGRESS] Shard 8 | Batch 30/100 | Total Samples: 1920 | Correct: 1800
+[PROGRESS] Shard 8 | Batch 40/100 | Total Samples: 2560 | Correct: 2398
+[PROGRESS] Shard 8 | Batch 50/100 | Total Samples: 3200 | Correct: 3012
+[PROGRESS] Shard 8 | Batch 60/100 | Total Samples: 3840 | Correct: 3611
+[PROGRESS] Shard 8 | Batch 70/100 | Total Samples: 4480 | Correct: 4204
+[PROGRESS] Shard 8 | Batch 80/100 | Total Samples: 5120 | Correct: 4803
+[PROGRESS] Shard 8 | Batch 90/100 | Total Samples: 5760 | Correct: 5408
+[PROGRESS] Shard 8 | Batch 0/100 | Total Samples: 6400 | Correct: 6005
+[RESULT] Shard 8 Accuracy: 93.83%
+[PROGRESS] Shard 9 | Batch 10/100 | Total Samples: 640 | Correct: 599
+[PROGRESS] Shard 9 | Batch 20/100 | Total Samples: 1280 | Correct: 1203
+[PROGRESS] Shard 9 | Batch 30/100 | Total Samples: 1920 | Correct: 1814
+[PROGRESS] Shard 9 | Batch 40/100 | Total Samples: 2560 | Correct: 2414
+[PROGRESS] Shard 9 | Batch 50/100 | Total Samples: 3200 | Correct: 3020
+[PROGRESS] Shard 9 | Batch 60/100 | Total Samples: 3840 | Correct: 3612
+[PROGRESS] Shard 9 | Batch 70/100 | Total Samples: 4480 | Correct: 4204
+[PROGRESS] Shard 9 | Batch 80/100 | Total Samples: 5120 | Correct: 4807
+[PROGRESS] Shard 9 | Batch 90/100 | Total Samples: 5760 | Correct: 5399
+[PROGRESS] Shard 9 | Batch 0/100 | Total Samples: 6400 | Correct: 5995
+[RESULT] Shard 9 Accuracy: 93.67%
+[PROGRESS] Shard 10 | Batch 10/100 | Total Samples: 640 | Correct: 605
+[PROGRESS] Shard 10 | Batch 20/100 | Total Samples: 1280 | Correct: 1211
+[PROGRESS] Shard 10 | Batch 30/100 | Total Samples: 1920 | Correct: 1800
+[PROGRESS] Shard 10 | Batch 40/100 | Total Samples: 2560 | Correct: 2400
+[PROGRESS] Shard 10 | Batch 50/100 | Total Samples: 3200 | Correct: 3008
+[PROGRESS] Shard 10 | Batch 60/100 | Total Samples: 3840 | Correct: 3615
+[PROGRESS] Shard 10 | Batch 70/100 | Total Samples: 4480 | Correct: 4228
+[PROGRESS] Shard 10 | Batch 80/100 | Total Samples: 5120 | Correct: 4824
+[PROGRESS] Shard 10 | Batch 90/100 | Total Samples: 5760 | Correct: 5425
+[PROGRESS] Shard 10 | Batch 0/100 | Total Samples: 6400 | Correct: 6022
+[RESULT] Shard 10 Accuracy: 94.09%
+[PROGRESS] Shard 11 | Batch 10/100 | Total Samples: 640 | Correct: 594
+[PROGRESS] Shard 11 | Batch 20/100 | Total Samples: 1280 | Correct: 1195
+[PROGRESS] Shard 11 | Batch 30/100 | Total Samples: 1920 | Correct: 1787
+[PROGRESS] Shard 11 | Batch 40/100 | Total Samples: 2560 | Correct: 2382
+[PROGRESS] Shard 11 | Batch 50/100 | Total Samples: 3200 | Correct: 2977
+[PROGRESS] Shard 11 | Batch 60/100 | Total Samples: 3840 | Correct: 3573
+[PROGRESS] Shard 11 | Batch 70/100 | Total Samples: 4480 | Correct: 4167
+[PROGRESS] Shard 11 | Batch 80/100 | Total Samples: 5120 | Correct: 4772
+[PROGRESS] Shard 11 | Batch 90/100 | Total Samples: 5760 | Correct: 5372
+[PROGRESS] Shard 11 | Batch 0/100 | Total Samples: 6400 | Correct: 5971
+[RESULT] Shard 11 Accuracy: 93.30%
+[PROGRESS] Shard 12 | Batch 10/100 | Total Samples: 640 | Correct: 606
+[PROGRESS] Shard 12 | Batch 20/100 | Total Samples: 1280 | Correct: 1203
+[PROGRESS] Shard 12 | Batch 30/100 | Total Samples: 1920 | Correct: 1804
+[PROGRESS] Shard 12 | Batch 40/100 | Total Samples: 2560 | Correct: 2407
+[PROGRESS] Shard 12 | Batch 50/100 | Total Samples: 3200 | Correct: 3005
+[PROGRESS] Shard 12 | Batch 60/100 | Total Samples: 3840 | Correct: 3608
+[PROGRESS] Shard 12 | Batch 70/100 | Total Samples: 4480 | Correct: 4202
+[PROGRESS] Shard 12 | Batch 80/100 | Total Samples: 5120 | Correct: 4804
+[PROGRESS] Shard 12 | Batch 90/100 | Total Samples: 5760 | Correct: 5391
+[PROGRESS] Shard 12 | Batch 0/100 | Total Samples: 6400 | Correct: 5990
+[RESULT] Shard 12 Accuracy: 93.59%
+[PROGRESS] Shard 13 | Batch 10/100 | Total Samples: 640 | Correct: 597
+[PROGRESS] Shard 13 | Batch 20/100 | Total Samples: 1280 | Correct: 1198
+[PROGRESS] Shard 13 | Batch 30/100 | Total Samples: 1920 | Correct: 1807
+[PROGRESS] Shard 13 | Batch 40/100 | Total Samples: 2560 | Correct: 2391
+[PROGRESS] Shard 13 | Batch 50/100 | Total Samples: 3200 | Correct: 2998
+[PROGRESS] Shard 13 | Batch 60/100 | Total Samples: 3840 | Correct: 3592
+[PROGRESS] Shard 13 | Batch 70/100 | Total Samples: 4480 | Correct: 4188
+[PROGRESS] Shard 13 | Batch 80/100 | Total Samples: 5120 | Correct: 4788
+[PROGRESS] Shard 13 | Batch 90/100 | Total Samples: 5760 | Correct: 5390
+[PROGRESS] Shard 13 | Batch 0/100 | Total Samples: 6400 | Correct: 5988
+[RESULT] Shard 13 Accuracy: 93.56%
+[PROGRESS] Shard 14 | Batch 10/100 | Total Samples: 640 | Correct: 591
+[PROGRESS] Shard 14 | Batch 20/100 | Total Samples: 1280 | Correct: 1191
+[PROGRESS] Shard 14 | Batch 30/100 | Total Samples: 1920 | Correct: 1795
+[PROGRESS] Shard 14 | Batch 40/100 | Total Samples: 2560 | Correct: 2411
+[PROGRESS] Shard 14 | Batch 50/100 | Total Samples: 3200 | Correct: 3007
+[PROGRESS] Shard 14 | Batch 60/100 | Total Samples: 3840 | Correct: 3619
+[PROGRESS] Shard 14 | Batch 70/100 | Total Samples: 4480 | Correct: 4214
+[PROGRESS] Shard 14 | Batch 80/100 | Total Samples: 5120 | Correct: 4818
+[PROGRESS] Shard 14 | Batch 90/100 | Total Samples: 5760 | Correct: 5423
+[PROGRESS] Shard 14 | Batch 0/100 | Total Samples: 6400 | Correct: 6029
+[RESULT] Shard 14 Accuracy: 94.20%

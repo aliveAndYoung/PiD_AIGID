@@ -1,0 +1,805 @@
+======================================================================================================================
+                                                                                                                                            TRAINING
+======================================================================================================================
+
+========================================
+STARTING EPOCH 0
+========================================
+[TRAIN] Epoch 0 | Shard 54 | Batch 10/100 | Loss: 0.2172
+[TRAIN] Epoch 0 | Shard 54 | Batch 20/100 | Loss: 0.3294
+[TRAIN] Epoch 0 | Shard 54 | Batch 30/100 | Loss: 0.1891
+[TRAIN] Epoch 0 | Shard 54 | Batch 40/100 | Loss: 0.2644
+[TRAIN] Epoch 0 | Shard 54 | Batch 50/100 | Loss: 0.2015
+[TRAIN] Epoch 0 | Shard 54 | Batch 60/100 | Loss: 0.1785
+[TRAIN] Epoch 0 | Shard 54 | Batch 70/100 | Loss: 0.2260
+[TRAIN] Epoch 0 | Shard 54 | Batch 80/100 | Loss: 0.1689
+[TRAIN] Epoch 0 | Shard 54 | Batch 90/100 | Loss: 0.1753
+[TRAIN] Epoch 0 | Shard 54 | Batch 100/100 | Loss: 0.2640
+
+[MILESTONE] Finished Shard 54. Validating...
+--- Initializing Validation Cache (Shard 0 - 6400 images) ---
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 89.98% | Shard Loss: 0.2640
+--- Checkpoint Saved: Shard 54, Epoch 0, Loss 0.2640 ---
+[TRAIN] Epoch 0 | Shard 55 | Batch 10/100 | Loss: 0.2699
+[TRAIN] Epoch 0 | Shard 55 | Batch 20/100 | Loss: 0.1663
+[TRAIN] Epoch 0 | Shard 55 | Batch 30/100 | Loss: 0.2337
+[TRAIN] Epoch 0 | Shard 55 | Batch 40/100 | Loss: 0.2011
+[TRAIN] Epoch 0 | Shard 55 | Batch 50/100 | Loss: 0.2242
+[TRAIN] Epoch 0 | Shard 55 | Batch 60/100 | Loss: 0.2060
+[TRAIN] Epoch 0 | Shard 55 | Batch 70/100 | Loss: 0.2322
+[TRAIN] Epoch 0 | Shard 55 | Batch 80/100 | Loss: 0.2163
+[TRAIN] Epoch 0 | Shard 55 | Batch 90/100 | Loss: 0.1802
+[TRAIN] Epoch 0 | Shard 55 | Batch 100/100 | Loss: 0.2115
+
+[MILESTONE] Finished Shard 55. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 90.36% | Shard Loss: 0.2115
+--- Checkpoint Saved: Shard 55, Epoch 0, Loss 0.2115 ---
+[TRAIN] Epoch 0 | Shard 56 | Batch 10/100 | Loss: 0.2528
+[TRAIN] Epoch 0 | Shard 56 | Batch 20/100 | Loss: 0.2937
+[TRAIN] Epoch 0 | Shard 56 | Batch 30/100 | Loss: 0.2259
+[TRAIN] Epoch 0 | Shard 56 | Batch 40/100 | Loss: 0.2214
+[TRAIN] Epoch 0 | Shard 56 | Batch 50/100 | Loss: 0.1751
+[TRAIN] Epoch 0 | Shard 56 | Batch 60/100 | Loss: 0.2217
+[TRAIN] Epoch 0 | Shard 56 | Batch 70/100 | Loss: 0.3571
+[TRAIN] Epoch 0 | Shard 56 | Batch 80/100 | Loss: 0.1861
+[TRAIN] Epoch 0 | Shard 56 | Batch 90/100 | Loss: 0.2521
+[TRAIN] Epoch 0 | Shard 56 | Batch 100/100 | Loss: 0.3073
+
+[MILESTONE] Finished Shard 56. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 90.45% | Shard Loss: 0.3073
+--- Checkpoint Saved: Shard 56, Epoch 0, Loss 0.3073 ---
+[TRAIN] Epoch 0 | Shard 57 | Batch 10/100 | Loss: 0.2360
+[TRAIN] Epoch 0 | Shard 57 | Batch 20/100 | Loss: 0.1809
+[TRAIN] Epoch 0 | Shard 57 | Batch 30/100 | Loss: 0.2071
+[TRAIN] Epoch 0 | Shard 57 | Batch 40/100 | Loss: 0.2165
+[TRAIN] Epoch 0 | Shard 57 | Batch 50/100 | Loss: 0.2338
+[TRAIN] Epoch 0 | Shard 57 | Batch 60/100 | Loss: 0.3750
+[TRAIN] Epoch 0 | Shard 57 | Batch 70/100 | Loss: 0.2268
+[TRAIN] Epoch 0 | Shard 57 | Batch 80/100 | Loss: 0.1876
+[TRAIN] Epoch 0 | Shard 57 | Batch 90/100 | Loss: 0.2523
+[TRAIN] Epoch 0 | Shard 57 | Batch 100/100 | Loss: 0.2602
+
+[MILESTONE] Finished Shard 57. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 90.40% | Shard Loss: 0.2602
+--- Checkpoint Saved: Shard 57, Epoch 0, Loss 0.2602 ---
+[TRAIN] Epoch 0 | Shard 58 | Batch 10/100 | Loss: 0.2308
+[TRAIN] Epoch 0 | Shard 58 | Batch 20/100 | Loss: 0.1979
+[TRAIN] Epoch 0 | Shard 58 | Batch 30/100 | Loss: 0.1552
+[TRAIN] Epoch 0 | Shard 58 | Batch 40/100 | Loss: 0.2217
+[TRAIN] Epoch 0 | Shard 58 | Batch 50/100 | Loss: 0.1948
+[TRAIN] Epoch 0 | Shard 58 | Batch 60/100 | Loss: 0.2411
+[TRAIN] Epoch 0 | Shard 58 | Batch 70/100 | Loss: 0.2632
+[TRAIN] Epoch 0 | Shard 58 | Batch 80/100 | Loss: 0.1714
+[TRAIN] Epoch 0 | Shard 58 | Batch 90/100 | Loss: 0.1785
+[TRAIN] Epoch 0 | Shard 58 | Batch 100/100 | Loss: 0.1835
+
+[MILESTONE] Finished Shard 58. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 90.83% | Shard Loss: 0.1835
+--- Checkpoint Saved: Shard 58, Epoch 0, Loss 0.1835 ---
+[TRAIN] Epoch 0 | Shard 59 | Batch 10/100 | Loss: 0.2640
+[TRAIN] Epoch 0 | Shard 59 | Batch 20/100 | Loss: 0.2094
+[TRAIN] Epoch 0 | Shard 59 | Batch 30/100 | Loss: 0.1841
+[TRAIN] Epoch 0 | Shard 59 | Batch 40/100 | Loss: 0.2209
+[TRAIN] Epoch 0 | Shard 59 | Batch 50/100 | Loss: 0.1474
+[TRAIN] Epoch 0 | Shard 59 | Batch 60/100 | Loss: 0.2025
+[TRAIN] Epoch 0 | Shard 59 | Batch 70/100 | Loss: 0.1778
+[TRAIN] Epoch 0 | Shard 59 | Batch 80/100 | Loss: 0.2755
+[TRAIN] Epoch 0 | Shard 59 | Batch 90/100 | Loss: 0.3738
+[TRAIN] Epoch 0 | Shard 59 | Batch 100/100 | Loss: 0.1765
+
+[MILESTONE] Finished Shard 59. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 90.98% | Shard Loss: 0.1765
+--- Checkpoint Saved: Shard 59, Epoch 0, Loss 0.1765 ---
+[TRAIN] Epoch 0 | Shard 60 | Batch 10/100 | Loss: 0.2337
+[TRAIN] Epoch 0 | Shard 60 | Batch 20/100 | Loss: 0.1560
+[TRAIN] Epoch 0 | Shard 60 | Batch 30/100 | Loss: 0.2204
+[TRAIN] Epoch 0 | Shard 60 | Batch 40/100 | Loss: 0.1257
+[TRAIN] Epoch 0 | Shard 60 | Batch 50/100 | Loss: 0.1672
+[TRAIN] Epoch 0 | Shard 60 | Batch 60/100 | Loss: 0.2561
+[TRAIN] Epoch 0 | Shard 60 | Batch 70/100 | Loss: 0.1963
+[TRAIN] Epoch 0 | Shard 60 | Batch 80/100 | Loss: 0.2597
+[TRAIN] Epoch 0 | Shard 60 | Batch 90/100 | Loss: 0.2636
+[TRAIN] Epoch 0 | Shard 60 | Batch 100/100 | Loss: 0.2261
+
+[MILESTONE] Finished Shard 60. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 90.36% | Shard Loss: 0.2261
+--- Checkpoint Saved: Shard 60, Epoch 0, Loss 0.2261 ---
+[TRAIN] Epoch 0 | Shard 61 | Batch 10/100 | Loss: 0.2488
+[TRAIN] Epoch 0 | Shard 61 | Batch 20/100 | Loss: 0.1907
+[TRAIN] Epoch 0 | Shard 61 | Batch 30/100 | Loss: 0.2016
+[TRAIN] Epoch 0 | Shard 61 | Batch 40/100 | Loss: 0.1753
+[TRAIN] Epoch 0 | Shard 61 | Batch 50/100 | Loss: 0.1534
+[TRAIN] Epoch 0 | Shard 61 | Batch 60/100 | Loss: 0.2905
+[TRAIN] Epoch 0 | Shard 61 | Batch 70/100 | Loss: 0.2297
+[TRAIN] Epoch 0 | Shard 61 | Batch 80/100 | Loss: 0.1937
+[TRAIN] Epoch 0 | Shard 61 | Batch 90/100 | Loss: 0.2768
+[TRAIN] Epoch 0 | Shard 61 | Batch 100/100 | Loss: 0.2244
+
+[MILESTONE] Finished Shard 61. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 91.09% | Shard Loss: 0.2244
+--- Checkpoint Saved: Shard 61, Epoch 0, Loss 0.2244 ---
+[TRAIN] Epoch 0 | Shard 62 | Batch 10/100 | Loss: 0.1904
+[TRAIN] Epoch 0 | Shard 62 | Batch 20/100 | Loss: 0.1331
+[TRAIN] Epoch 0 | Shard 62 | Batch 30/100 | Loss: 0.1962
+[TRAIN] Epoch 0 | Shard 62 | Batch 40/100 | Loss: 0.2046
+[TRAIN] Epoch 0 | Shard 62 | Batch 50/100 | Loss: 0.2652
+[TRAIN] Epoch 0 | Shard 62 | Batch 60/100 | Loss: 0.2994
+[TRAIN] Epoch 0 | Shard 62 | Batch 70/100 | Loss: 0.1352
+[TRAIN] Epoch 0 | Shard 62 | Batch 80/100 | Loss: 0.2267
+[TRAIN] Epoch 0 | Shard 62 | Batch 90/100 | Loss: 0.3047
+[TRAIN] Epoch 0 | Shard 62 | Batch 100/100 | Loss: 0.1630
+
+[MILESTONE] Finished Shard 62. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 91.32% | Shard Loss: 0.1630
+--- Checkpoint Saved: Shard 62, Epoch 0, Loss 0.1630 ---
+[TRAIN] Epoch 0 | Shard 63 | Batch 10/100 | Loss: 0.2436
+[TRAIN] Epoch 0 | Shard 63 | Batch 20/100 | Loss: 0.2679
+[TRAIN] Epoch 0 | Shard 63 | Batch 30/100 | Loss: 0.2643
+[TRAIN] Epoch 0 | Shard 63 | Batch 40/100 | Loss: 0.1964
+[TRAIN] Epoch 0 | Shard 63 | Batch 50/100 | Loss: 0.1866
+[TRAIN] Epoch 0 | Shard 63 | Batch 60/100 | Loss: 0.1410
+[TRAIN] Epoch 0 | Shard 63 | Batch 70/100 | Loss: 0.2775
+[TRAIN] Epoch 0 | Shard 63 | Batch 80/100 | Loss: 0.1715
+[TRAIN] Epoch 0 | Shard 63 | Batch 90/100 | Loss: 0.2280
+[TRAIN] Epoch 0 | Shard 63 | Batch 100/100 | Loss: 0.2147
+
+[MILESTONE] Finished Shard 63. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 91.25% | Shard Loss: 0.2147
+--- Checkpoint Saved: Shard 63, Epoch 0, Loss 0.2147 ---
+[TRAIN] Epoch 0 | Shard 64 | Batch 10/100 | Loss: 0.1894
+[TRAIN] Epoch 0 | Shard 64 | Batch 20/100 | Loss: 0.2142
+[TRAIN] Epoch 0 | Shard 64 | Batch 30/100 | Loss: 0.1603
+[TRAIN] Epoch 0 | Shard 64 | Batch 40/100 | Loss: 0.1685
+[TRAIN] Epoch 0 | Shard 64 | Batch 50/100 | Loss: 0.2221
+[TRAIN] Epoch 0 | Shard 64 | Batch 60/100 | Loss: 0.2449
+[TRAIN] Epoch 0 | Shard 64 | Batch 70/100 | Loss: 0.1916
+[TRAIN] Epoch 0 | Shard 64 | Batch 80/100 | Loss: 0.2174
+[TRAIN] Epoch 0 | Shard 64 | Batch 90/100 | Loss: 0.2494
+[TRAIN] Epoch 0 | Shard 64 | Batch 100/100 | Loss: 0.1537
+
+[MILESTONE] Finished Shard 64. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 91.32% | Shard Loss: 0.1537
+--- Checkpoint Saved: Shard 64, Epoch 0, Loss 0.1537 ---
+[TRAIN] Epoch 0 | Shard 65 | Batch 10/100 | Loss: 0.2172
+[TRAIN] Epoch 0 | Shard 65 | Batch 20/100 | Loss: 0.2762
+[TRAIN] Epoch 0 | Shard 65 | Batch 30/100 | Loss: 0.1604
+[TRAIN] Epoch 0 | Shard 65 | Batch 40/100 | Loss: 0.1987
+[TRAIN] Epoch 0 | Shard 65 | Batch 50/100 | Loss: 0.1284
+[TRAIN] Epoch 0 | Shard 65 | Batch 60/100 | Loss: 0.2832
+[TRAIN] Epoch 0 | Shard 65 | Batch 70/100 | Loss: 0.2114
+[TRAIN] Epoch 0 | Shard 65 | Batch 80/100 | Loss: 0.2495
+[TRAIN] Epoch 0 | Shard 65 | Batch 90/100 | Loss: 0.1162
+[TRAIN] Epoch 0 | Shard 65 | Batch 100/100 | Loss: 0.1640
+
+[MILESTONE] Finished Shard 65. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 91.25% | Shard Loss: 0.1640
+--- Checkpoint Saved: Shard 65, Epoch 0, Loss 0.1640 ---
+[TRAIN] Epoch 0 | Shard 66 | Batch 10/100 | Loss: 0.2256
+[TRAIN] Epoch 0 | Shard 66 | Batch 20/100 | Loss: 0.2851
+[TRAIN] Epoch 0 | Shard 66 | Batch 30/100 | Loss: 0.1180
+[TRAIN] Epoch 0 | Shard 66 | Batch 40/100 | Loss: 0.1751
+[TRAIN] Epoch 0 | Shard 66 | Batch 50/100 | Loss: 0.2191
+[TRAIN] Epoch 0 | Shard 66 | Batch 60/100 | Loss: 0.2676
+[TRAIN] Epoch 0 | Shard 66 | Batch 70/100 | Loss: 0.1579
+[TRAIN] Epoch 0 | Shard 66 | Batch 80/100 | Loss: 0.1808
+[TRAIN] Epoch 0 | Shard 66 | Batch 90/100 | Loss: 0.1299
+[TRAIN] Epoch 0 | Shard 66 | Batch 100/100 | Loss: 0.1793
+
+[MILESTONE] Finished Shard 66. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 91.65% | Shard Loss: 0.1793
+--- Checkpoint Saved: Shard 66, Epoch 0, Loss 0.1793 ---
+[TRAIN] Epoch 0 | Shard 67 | Batch 10/100 | Loss: 0.3233
+[TRAIN] Epoch 0 | Shard 67 | Batch 20/100 | Loss: 0.1410
+[TRAIN] Epoch 0 | Shard 67 | Batch 30/100 | Loss: 0.2158
+[TRAIN] Epoch 0 | Shard 67 | Batch 40/100 | Loss: 0.1002
+[TRAIN] Epoch 0 | Shard 67 | Batch 50/100 | Loss: 0.1481
+[TRAIN] Epoch 0 | Shard 67 | Batch 60/100 | Loss: 0.1812
+[TRAIN] Epoch 0 | Shard 67 | Batch 70/100 | Loss: 0.2094
+[TRAIN] Epoch 0 | Shard 67 | Batch 80/100 | Loss: 0.1153
+[TRAIN] Epoch 0 | Shard 67 | Batch 90/100 | Loss: 0.3269
+[TRAIN] Epoch 0 | Shard 67 | Batch 100/100 | Loss: 0.1608
+
+[MILESTONE] Finished Shard 67. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.12% | Shard Loss: 0.1608
+--- Checkpoint Saved: Shard 67, Epoch 0, Loss 0.1608 ---
+[TRAIN] Epoch 0 | Shard 68 | Batch 10/100 | Loss: 0.2621
+[TRAIN] Epoch 0 | Shard 68 | Batch 20/100 | Loss: 0.1917
+[TRAIN] Epoch 0 | Shard 68 | Batch 30/100 | Loss: 0.1565
+[TRAIN] Epoch 0 | Shard 68 | Batch 40/100 | Loss: 0.1930
+[TRAIN] Epoch 0 | Shard 68 | Batch 50/100 | Loss: 0.2548
+[TRAIN] Epoch 0 | Shard 68 | Batch 60/100 | Loss: 0.1831
+[TRAIN] Epoch 0 | Shard 68 | Batch 70/100 | Loss: 0.1830
+[TRAIN] Epoch 0 | Shard 68 | Batch 80/100 | Loss: 0.2250
+[TRAIN] Epoch 0 | Shard 68 | Batch 90/100 | Loss: 0.1284
+[TRAIN] Epoch 0 | Shard 68 | Batch 100/100 | Loss: 0.1694
+
+[MILESTONE] Finished Shard 68. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.03% | Shard Loss: 0.1694
+--- Checkpoint Saved: Shard 68, Epoch 0, Loss 0.1694 ---
+[TRAIN] Epoch 0 | Shard 69 | Batch 10/100 | Loss: 0.2964
+[TRAIN] Epoch 0 | Shard 69 | Batch 20/100 | Loss: 0.2600
+[TRAIN] Epoch 0 | Shard 69 | Batch 30/100 | Loss: 0.1890
+[TRAIN] Epoch 0 | Shard 69 | Batch 40/100 | Loss: 0.2331
+[TRAIN] Epoch 0 | Shard 69 | Batch 50/100 | Loss: 0.1381
+[TRAIN] Epoch 0 | Shard 69 | Batch 60/100 | Loss: 0.2453
+[TRAIN] Epoch 0 | Shard 69 | Batch 70/100 | Loss: 0.2336
+[TRAIN] Epoch 0 | Shard 69 | Batch 80/100 | Loss: 0.2066
+[TRAIN] Epoch 0 | Shard 69 | Batch 90/100 | Loss: 0.2373
+[TRAIN] Epoch 0 | Shard 69 | Batch 100/100 | Loss: 0.2605
+
+[MILESTONE] Finished Shard 69. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 91.96% | Shard Loss: 0.2605
+--- Checkpoint Saved: Shard 69, Epoch 0, Loss 0.2605 ---
+[TRAIN] Epoch 0 | Shard 70 | Batch 10/100 | Loss: 0.1864
+[TRAIN] Epoch 0 | Shard 70 | Batch 20/100 | Loss: 0.1823
+[TRAIN] Epoch 0 | Shard 70 | Batch 30/100 | Loss: 0.1198
+[TRAIN] Epoch 0 | Shard 70 | Batch 40/100 | Loss: 0.1452
+[TRAIN] Epoch 0 | Shard 70 | Batch 50/100 | Loss: 0.1960
+[TRAIN] Epoch 0 | Shard 70 | Batch 60/100 | Loss: 0.2209
+[TRAIN] Epoch 0 | Shard 70 | Batch 70/100 | Loss: 0.1110
+[TRAIN] Epoch 0 | Shard 70 | Batch 80/100 | Loss: 0.2268
+[TRAIN] Epoch 0 | Shard 70 | Batch 90/100 | Loss: 0.1843
+[TRAIN] Epoch 0 | Shard 70 | Batch 100/100 | Loss: 0.1469
+
+[MILESTONE] Finished Shard 70. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.08% | Shard Loss: 0.1469
+--- Checkpoint Saved: Shard 70, Epoch 0, Loss 0.1469 ---
+[TRAIN] Epoch 0 | Shard 71 | Batch 10/100 | Loss: 0.1434
+[TRAIN] Epoch 0 | Shard 71 | Batch 20/100 | Loss: 0.0988
+[TRAIN] Epoch 0 | Shard 71 | Batch 30/100 | Loss: 0.1882
+[TRAIN] Epoch 0 | Shard 71 | Batch 40/100 | Loss: 0.1711
+[TRAIN] Epoch 0 | Shard 71 | Batch 50/100 | Loss: 0.1217
+[TRAIN] Epoch 0 | Shard 71 | Batch 60/100 | Loss: 0.1962
+[TRAIN] Epoch 0 | Shard 71 | Batch 70/100 | Loss: 0.2738
+[TRAIN] Epoch 0 | Shard 71 | Batch 80/100 | Loss: 0.1461
+[TRAIN] Epoch 0 | Shard 71 | Batch 90/100 | Loss: 0.1889
+[TRAIN] Epoch 0 | Shard 71 | Batch 100/100 | Loss: 0.1529
+
+[MILESTONE] Finished Shard 71. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.21% | Shard Loss: 0.1529
+--- Checkpoint Saved: Shard 71, Epoch 0, Loss 0.1529 ---
+[TRAIN] Epoch 0 | Shard 72 | Batch 10/100 | Loss: 0.2348
+[TRAIN] Epoch 0 | Shard 72 | Batch 20/100 | Loss: 0.3028
+[TRAIN] Epoch 0 | Shard 72 | Batch 30/100 | Loss: 0.1972
+[TRAIN] Epoch 0 | Shard 72 | Batch 40/100 | Loss: 0.1634
+[TRAIN] Epoch 0 | Shard 72 | Batch 50/100 | Loss: 0.1602
+[TRAIN] Epoch 0 | Shard 72 | Batch 60/100 | Loss: 0.2195
+[TRAIN] Epoch 0 | Shard 72 | Batch 70/100 | Loss: 0.1569
+[TRAIN] Epoch 0 | Shard 72 | Batch 80/100 | Loss: 0.1845
+[TRAIN] Epoch 0 | Shard 72 | Batch 90/100 | Loss: 0.1638
+[TRAIN] Epoch 0 | Shard 72 | Batch 100/100 | Loss: 0.1638
+
+[MILESTONE] Finished Shard 72. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.32% | Shard Loss: 0.1638
+--- Checkpoint Saved: Shard 72, Epoch 0, Loss 0.1638 ---
+[TRAIN] Epoch 0 | Shard 73 | Batch 10/100 | Loss: 0.1931
+[TRAIN] Epoch 0 | Shard 73 | Batch 20/100 | Loss: 0.1532
+[TRAIN] Epoch 0 | Shard 73 | Batch 30/100 | Loss: 0.1448
+[TRAIN] Epoch 0 | Shard 73 | Batch 40/100 | Loss: 0.1316
+[TRAIN] Epoch 0 | Shard 73 | Batch 50/100 | Loss: 0.1602
+[TRAIN] Epoch 0 | Shard 73 | Batch 60/100 | Loss: 0.2190
+[TRAIN] Epoch 0 | Shard 73 | Batch 70/100 | Loss: 0.2209
+[TRAIN] Epoch 0 | Shard 73 | Batch 80/100 | Loss: 0.1711
+[TRAIN] Epoch 0 | Shard 73 | Batch 90/100 | Loss: 0.1889
+[TRAIN] Epoch 0 | Shard 73 | Batch 100/100 | Loss: 0.1534
+
+[MILESTONE] Finished Shard 73. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.21% | Shard Loss: 0.1534
+--- Checkpoint Saved: Shard 73, Epoch 0, Loss 0.1534 ---
+[TRAIN] Epoch 0 | Shard 74 | Batch 10/100 | Loss: 0.1063
+[TRAIN] Epoch 0 | Shard 74 | Batch 20/100 | Loss: 0.1996
+[TRAIN] Epoch 0 | Shard 74 | Batch 30/100 | Loss: 0.2234
+[TRAIN] Epoch 0 | Shard 74 | Batch 40/100 | Loss: 0.2083
+[TRAIN] Epoch 0 | Shard 74 | Batch 50/100 | Loss: 0.1814
+[TRAIN] Epoch 0 | Shard 74 | Batch 60/100 | Loss: 0.3630
+[TRAIN] Epoch 0 | Shard 74 | Batch 70/100 | Loss: 0.2117
+[TRAIN] Epoch 0 | Shard 74 | Batch 80/100 | Loss: 0.1674
+[TRAIN] Epoch 0 | Shard 74 | Batch 90/100 | Loss: 0.2566
+[TRAIN] Epoch 0 | Shard 74 | Batch 100/100 | Loss: 0.2029
+
+[MILESTONE] Finished Shard 74. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.52% | Shard Loss: 0.2029
+--- Checkpoint Saved: Shard 74, Epoch 0, Loss 0.2029 ---
+[TRAIN] Epoch 0 | Shard 75 | Batch 10/100 | Loss: 0.1820
+[TRAIN] Epoch 0 | Shard 75 | Batch 20/100 | Loss: 0.1645
+[TRAIN] Epoch 0 | Shard 75 | Batch 30/100 | Loss: 0.2100
+[TRAIN] Epoch 0 | Shard 75 | Batch 40/100 | Loss: 0.1836
+[TRAIN] Epoch 0 | Shard 75 | Batch 50/100 | Loss: 0.2038
+[TRAIN] Epoch 0 | Shard 75 | Batch 60/100 | Loss: 0.1357
+[TRAIN] Epoch 0 | Shard 75 | Batch 70/100 | Loss: 0.1865
+[TRAIN] Epoch 0 | Shard 75 | Batch 80/100 | Loss: 0.2077
+[TRAIN] Epoch 0 | Shard 75 | Batch 90/100 | Loss: 0.1599
+[TRAIN] Epoch 0 | Shard 75 | Batch 100/100 | Loss: 0.1549
+
+[MILESTONE] Finished Shard 75. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.43% | Shard Loss: 0.1549
+--- Checkpoint Saved: Shard 75, Epoch 0, Loss 0.1549 ---
+[TRAIN] Epoch 0 | Shard 76 | Batch 10/100 | Loss: 0.1825
+[TRAIN] Epoch 0 | Shard 76 | Batch 20/100 | Loss: 0.1506
+[TRAIN] Epoch 0 | Shard 76 | Batch 30/100 | Loss: 0.2887
+[TRAIN] Epoch 0 | Shard 76 | Batch 40/100 | Loss: 0.1653
+[TRAIN] Epoch 0 | Shard 76 | Batch 50/100 | Loss: 0.1470
+[TRAIN] Epoch 0 | Shard 76 | Batch 60/100 | Loss: 0.1388
+[TRAIN] Epoch 0 | Shard 76 | Batch 70/100 | Loss: 0.1611
+[TRAIN] Epoch 0 | Shard 76 | Batch 80/100 | Loss: 0.1796
+[TRAIN] Epoch 0 | Shard 76 | Batch 90/100 | Loss: 0.1213
+[TRAIN] Epoch 0 | Shard 76 | Batch 100/100 | Loss: 0.1325
+
+[MILESTONE] Finished Shard 76. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.23% | Shard Loss: 0.1325
+--- Checkpoint Saved: Shard 76, Epoch 0, Loss 0.1325 ---
+[TRAIN] Epoch 0 | Shard 77 | Batch 10/100 | Loss: 0.2148
+[TRAIN] Epoch 0 | Shard 77 | Batch 20/100 | Loss: 0.1533
+[TRAIN] Epoch 0 | Shard 77 | Batch 30/100 | Loss: 0.2194
+[TRAIN] Epoch 0 | Shard 77 | Batch 40/100 | Loss: 0.1564
+[TRAIN] Epoch 0 | Shard 77 | Batch 50/100 | Loss: 0.1155
+[TRAIN] Epoch 0 | Shard 77 | Batch 60/100 | Loss: 0.1703
+[TRAIN] Epoch 0 | Shard 77 | Batch 70/100 | Loss: 0.2221
+[TRAIN] Epoch 0 | Shard 77 | Batch 80/100 | Loss: 0.1375
+[TRAIN] Epoch 0 | Shard 77 | Batch 90/100 | Loss: 0.2462
+[TRAIN] Epoch 0 | Shard 77 | Batch 100/100 | Loss: 0.1417
+
+[MILESTONE] Finished Shard 77. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.48% | Shard Loss: 0.1417
+--- Checkpoint Saved: Shard 77, Epoch 0, Loss 0.1417 ---
+[TRAIN] Epoch 0 | Shard 78 | Batch 10/100 | Loss: 0.1036
+[TRAIN] Epoch 0 | Shard 78 | Batch 20/100 | Loss: 0.1596
+[TRAIN] Epoch 0 | Shard 78 | Batch 30/100 | Loss: 0.1633
+[TRAIN] Epoch 0 | Shard 78 | Batch 40/100 | Loss: 0.1684
+[TRAIN] Epoch 0 | Shard 78 | Batch 50/100 | Loss: 0.1412
+[TRAIN] Epoch 0 | Shard 78 | Batch 60/100 | Loss: 0.1816
+[TRAIN] Epoch 0 | Shard 78 | Batch 70/100 | Loss: 0.2001
+[TRAIN] Epoch 0 | Shard 78 | Batch 80/100 | Loss: 0.1812
+[TRAIN] Epoch 0 | Shard 78 | Batch 90/100 | Loss: 0.2371
+[TRAIN] Epoch 0 | Shard 78 | Batch 100/100 | Loss: 0.1525
+
+[MILESTONE] Finished Shard 78. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.61% | Shard Loss: 0.1525
+--- Checkpoint Saved: Shard 78, Epoch 0, Loss 0.1525 ---
+[TRAIN] Epoch 0 | Shard 79 | Batch 10/100 | Loss: 0.2666
+[TRAIN] Epoch 0 | Shard 79 | Batch 20/100 | Loss: 0.1680
+[TRAIN] Epoch 0 | Shard 79 | Batch 30/100 | Loss: 0.2490
+[TRAIN] Epoch 0 | Shard 79 | Batch 40/100 | Loss: 0.1969
+[TRAIN] Epoch 0 | Shard 79 | Batch 50/100 | Loss: 0.2474
+[TRAIN] Epoch 0 | Shard 79 | Batch 60/100 | Loss: 0.1897
+[TRAIN] Epoch 0 | Shard 79 | Batch 70/100 | Loss: 0.2691
+[TRAIN] Epoch 0 | Shard 79 | Batch 80/100 | Loss: 0.1377
+[TRAIN] Epoch 0 | Shard 79 | Batch 90/100 | Loss: 0.0943
+[TRAIN] Epoch 0 | Shard 79 | Batch 100/100 | Loss: 0.0991
+
+[MILESTONE] Finished Shard 79. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.50% | Shard Loss: 0.0991
+--- Checkpoint Saved: Shard 79, Epoch 0, Loss 0.0991 ---
+[TRAIN] Epoch 0 | Shard 80 | Batch 10/100 | Loss: 0.2779
+[TRAIN] Epoch 0 | Shard 80 | Batch 20/100 | Loss: 0.3006
+[TRAIN] Epoch 0 | Shard 80 | Batch 30/100 | Loss: 0.2382
+[TRAIN] Epoch 0 | Shard 80 | Batch 40/100 | Loss: 0.1941
+[TRAIN] Epoch 0 | Shard 80 | Batch 50/100 | Loss: 0.1888
+[TRAIN] Epoch 0 | Shard 80 | Batch 60/100 | Loss: 0.1075
+[TRAIN] Epoch 0 | Shard 80 | Batch 70/100 | Loss: 0.1289
+[TRAIN] Epoch 0 | Shard 80 | Batch 80/100 | Loss: 0.2835
+[TRAIN] Epoch 0 | Shard 80 | Batch 90/100 | Loss: 0.2926
+[TRAIN] Epoch 0 | Shard 80 | Batch 100/100 | Loss: 0.2005
+
+[MILESTONE] Finished Shard 80. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.81% | Shard Loss: 0.2005
+--- Checkpoint Saved: Shard 80, Epoch 0, Loss 0.2005 ---
+[TRAIN] Epoch 0 | Shard 81 | Batch 10/100 | Loss: 0.1438
+[TRAIN] Epoch 0 | Shard 81 | Batch 20/100 | Loss: 0.2508
+[TRAIN] Epoch 0 | Shard 81 | Batch 30/100 | Loss: 0.2829
+[TRAIN] Epoch 0 | Shard 81 | Batch 40/100 | Loss: 0.1120
+[TRAIN] Epoch 0 | Shard 81 | Batch 50/100 | Loss: 0.1491
+[TRAIN] Epoch 0 | Shard 81 | Batch 60/100 | Loss: 0.2276
+[TRAIN] Epoch 0 | Shard 81 | Batch 70/100 | Loss: 0.1808
+[TRAIN] Epoch 0 | Shard 81 | Batch 80/100 | Loss: 0.1149
+[TRAIN] Epoch 0 | Shard 81 | Batch 90/100 | Loss: 0.1982
+[TRAIN] Epoch 0 | Shard 81 | Batch 100/100 | Loss: 0.2120
+
+[MILESTONE] Finished Shard 81. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.70% | Shard Loss: 0.2120
+--- Checkpoint Saved: Shard 81, Epoch 0, Loss 0.2120 ---
+[TRAIN] Epoch 0 | Shard 82 | Batch 10/100 | Loss: 0.2054
+[TRAIN] Epoch 0 | Shard 82 | Batch 20/100 | Loss: 0.2471
+[TRAIN] Epoch 0 | Shard 82 | Batch 30/100 | Loss: 0.1894
+[TRAIN] Epoch 0 | Shard 82 | Batch 40/100 | Loss: 0.1172
+[TRAIN] Epoch 0 | Shard 82 | Batch 50/100 | Loss: 0.0887
+[TRAIN] Epoch 0 | Shard 82 | Batch 60/100 | Loss: 0.2628
+[TRAIN] Epoch 0 | Shard 82 | Batch 70/100 | Loss: 0.1515
+[TRAIN] Epoch 0 | Shard 82 | Batch 80/100 | Loss: 0.1783
+[TRAIN] Epoch 0 | Shard 82 | Batch 90/100 | Loss: 0.1786
+[TRAIN] Epoch 0 | Shard 82 | Batch 100/100 | Loss: 0.1588
+
+[MILESTONE] Finished Shard 82. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.79% | Shard Loss: 0.1588
+--- Checkpoint Saved: Shard 82, Epoch 0, Loss 0.1588 ---
+[TRAIN] Epoch 0 | Shard 83 | Batch 10/100 | Loss: 0.1847
+[TRAIN] Epoch 0 | Shard 83 | Batch 20/100 | Loss: 0.2018
+[TRAIN] Epoch 0 | Shard 83 | Batch 30/100 | Loss: 0.1392
+[TRAIN] Epoch 0 | Shard 83 | Batch 40/100 | Loss: 0.1441
+[TRAIN] Epoch 0 | Shard 83 | Batch 50/100 | Loss: 0.0798
+[TRAIN] Epoch 0 | Shard 83 | Batch 60/100 | Loss: 0.1969
+[TRAIN] Epoch 0 | Shard 83 | Batch 70/100 | Loss: 0.1112
+[TRAIN] Epoch 0 | Shard 83 | Batch 80/100 | Loss: 0.1560
+[TRAIN] Epoch 0 | Shard 83 | Batch 90/100 | Loss: 0.1629
+[TRAIN] Epoch 0 | Shard 83 | Batch 100/100 | Loss: 0.2234
+
+[MILESTONE] Finished Shard 83. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.37% | Shard Loss: 0.2234
+--- Checkpoint Saved: Shard 83, Epoch 0, Loss 0.2234 ---
+[TRAIN] Epoch 0 | Shard 84 | Batch 10/100 | Loss: 0.2381
+[TRAIN] Epoch 0 | Shard 84 | Batch 20/100 | Loss: 0.2604
+[TRAIN] Epoch 0 | Shard 84 | Batch 30/100 | Loss: 0.1874
+[TRAIN] Epoch 0 | Shard 84 | Batch 40/100 | Loss: 0.1375
+[TRAIN] Epoch 0 | Shard 84 | Batch 50/100 | Loss: 0.1278
+[TRAIN] Epoch 0 | Shard 84 | Batch 60/100 | Loss: 0.2020
+[TRAIN] Epoch 0 | Shard 84 | Batch 70/100 | Loss: 0.1405
+[TRAIN] Epoch 0 | Shard 84 | Batch 80/100 | Loss: 0.1409
+[TRAIN] Epoch 0 | Shard 84 | Batch 90/100 | Loss: 0.1269
+[TRAIN] Epoch 0 | Shard 84 | Batch 100/100 | Loss: 0.1163
+
+[MILESTONE] Finished Shard 84. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.04% | Shard Loss: 0.1163
+--- Checkpoint Saved: Shard 84, Epoch 0, Loss 0.1163 ---
+[TRAIN] Epoch 0 | Shard 85 | Batch 10/100 | Loss: 0.1551
+[TRAIN] Epoch 0 | Shard 85 | Batch 20/100 | Loss: 0.1723
+[TRAIN] Epoch 0 | Shard 85 | Batch 30/100 | Loss: 0.2205
+[TRAIN] Epoch 0 | Shard 85 | Batch 40/100 | Loss: 0.1824
+[TRAIN] Epoch 0 | Shard 85 | Batch 50/100 | Loss: 0.0940
+[TRAIN] Epoch 0 | Shard 85 | Batch 60/100 | Loss: 0.1294
+[TRAIN] Epoch 0 | Shard 85 | Batch 70/100 | Loss: 0.1314
+[TRAIN] Epoch 0 | Shard 85 | Batch 80/100 | Loss: 0.3488
+[TRAIN] Epoch 0 | Shard 85 | Batch 90/100 | Loss: 0.1731
+[TRAIN] Epoch 0 | Shard 85 | Batch 100/100 | Loss: 0.1421
+
+[MILESTONE] Finished Shard 85. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 92.70% | Shard Loss: 0.1421
+--- Checkpoint Saved: Shard 85, Epoch 0, Loss 0.1421 ---
+[TRAIN] Epoch 0 | Shard 86 | Batch 10/100 | Loss: 0.1734
+[TRAIN] Epoch 0 | Shard 86 | Batch 20/100 | Loss: 0.1955
+[TRAIN] Epoch 0 | Shard 86 | Batch 30/100 | Loss: 0.1823
+[TRAIN] Epoch 0 | Shard 86 | Batch 40/100 | Loss: 0.1162
+[TRAIN] Epoch 0 | Shard 86 | Batch 50/100 | Loss: 0.1509
+[TRAIN] Epoch 0 | Shard 86 | Batch 60/100 | Loss: 0.1191
+[TRAIN] Epoch 0 | Shard 86 | Batch 70/100 | Loss: 0.1363
+[TRAIN] Epoch 0 | Shard 86 | Batch 80/100 | Loss: 0.1872
+[TRAIN] Epoch 0 | Shard 86 | Batch 90/100 | Loss: 0.0946
+[TRAIN] Epoch 0 | Shard 86 | Batch 100/100 | Loss: 0.2040
+
+[MILESTONE] Finished Shard 86. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.12% | Shard Loss: 0.2040
+--- Checkpoint Saved: Shard 86, Epoch 0, Loss 0.2040 ---
+[TRAIN] Epoch 0 | Shard 87 | Batch 10/100 | Loss: 0.2660
+[TRAIN] Epoch 0 | Shard 87 | Batch 20/100 | Loss: 0.1588
+[TRAIN] Epoch 0 | Shard 87 | Batch 30/100 | Loss: 0.1533
+[TRAIN] Epoch 0 | Shard 87 | Batch 40/100 | Loss: 0.2759
+[TRAIN] Epoch 0 | Shard 87 | Batch 50/100 | Loss: 0.1468
+[TRAIN] Epoch 0 | Shard 87 | Batch 60/100 | Loss: 0.1815
+[TRAIN] Epoch 0 | Shard 87 | Batch 70/100 | Loss: 0.2067
+[TRAIN] Epoch 0 | Shard 87 | Batch 80/100 | Loss: 0.2067
+[TRAIN] Epoch 0 | Shard 87 | Batch 90/100 | Loss: 0.1580
+[TRAIN] Epoch 0 | Shard 87 | Batch 100/100 | Loss: 0.1997
+
+[MILESTONE] Finished Shard 87. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.30% | Shard Loss: 0.1997
+--- Checkpoint Saved: Shard 87, Epoch 0, Loss 0.1997 ---
+[TRAIN] Epoch 0 | Shard 88 | Batch 10/100 | Loss: 0.1776
+[TRAIN] Epoch 0 | Shard 88 | Batch 20/100 | Loss: 0.1069
+[TRAIN] Epoch 0 | Shard 88 | Batch 30/100 | Loss: 0.2636
+[TRAIN] Epoch 0 | Shard 88 | Batch 40/100 | Loss: 0.1563
+[TRAIN] Epoch 0 | Shard 88 | Batch 50/100 | Loss: 0.1578
+[TRAIN] Epoch 0 | Shard 88 | Batch 60/100 | Loss: 0.2119
+[TRAIN] Epoch 0 | Shard 88 | Batch 70/100 | Loss: 0.1477
+[TRAIN] Epoch 0 | Shard 88 | Batch 80/100 | Loss: 0.1242
+[TRAIN] Epoch 0 | Shard 88 | Batch 90/100 | Loss: 0.1285
+[TRAIN] Epoch 0 | Shard 88 | Batch 100/100 | Loss: 0.1349
+
+[MILESTONE] Finished Shard 88. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.08% | Shard Loss: 0.1349
+--- Checkpoint Saved: Shard 88, Epoch 0, Loss 0.1349 ---
+[TRAIN] Epoch 0 | Shard 89 | Batch 10/100 | Loss: 0.1024
+[TRAIN] Epoch 0 | Shard 89 | Batch 20/100 | Loss: 0.1304
+[TRAIN] Epoch 0 | Shard 89 | Batch 30/100 | Loss: 0.1351
+[TRAIN] Epoch 0 | Shard 89 | Batch 40/100 | Loss: 0.1271
+[TRAIN] Epoch 0 | Shard 89 | Batch 50/100 | Loss: 0.1003
+[TRAIN] Epoch 0 | Shard 89 | Batch 60/100 | Loss: 0.1748
+[TRAIN] Epoch 0 | Shard 89 | Batch 70/100 | Loss: 0.0935
+[TRAIN] Epoch 0 | Shard 89 | Batch 80/100 | Loss: 0.1604
+[TRAIN] Epoch 0 | Shard 89 | Batch 90/100 | Loss: 0.1541
+[TRAIN] Epoch 0 | Shard 89 | Batch 100/100 | Loss: 0.1180
+
+[MILESTONE] Finished Shard 89. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.33% | Shard Loss: 0.1180
+--- Checkpoint Saved: Shard 89, Epoch 0, Loss 0.1180 ---
+[TRAIN] Epoch 0 | Shard 90 | Batch 10/100 | Loss: 0.1468
+[TRAIN] Epoch 0 | Shard 90 | Batch 20/100 | Loss: 0.1324
+[TRAIN] Epoch 0 | Shard 90 | Batch 30/100 | Loss: 0.2153
+[TRAIN] Epoch 0 | Shard 90 | Batch 40/100 | Loss: 0.1636
+[TRAIN] Epoch 0 | Shard 90 | Batch 50/100 | Loss: 0.1555
+[TRAIN] Epoch 0 | Shard 90 | Batch 60/100 | Loss: 0.2199
+[TRAIN] Epoch 0 | Shard 90 | Batch 70/100 | Loss: 0.2201
+[TRAIN] Epoch 0 | Shard 90 | Batch 80/100 | Loss: 0.1370
+[TRAIN] Epoch 0 | Shard 90 | Batch 90/100 | Loss: 0.2311
+[TRAIN] Epoch 0 | Shard 90 | Batch 100/100 | Loss: 0.1984
+
+[MILESTONE] Finished Shard 90. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.26% | Shard Loss: 0.1984
+--- Checkpoint Saved: Shard 90, Epoch 0, Loss 0.1984 ---
+[TRAIN] Epoch 0 | Shard 91 | Batch 10/100 | Loss: 0.0891
+[TRAIN] Epoch 0 | Shard 91 | Batch 20/100 | Loss: 0.1925
+[TRAIN] Epoch 0 | Shard 91 | Batch 30/100 | Loss: 0.1470
+[TRAIN] Epoch 0 | Shard 91 | Batch 40/100 | Loss: 0.1173
+[TRAIN] Epoch 0 | Shard 91 | Batch 50/100 | Loss: 0.2342
+[TRAIN] Epoch 0 | Shard 91 | Batch 60/100 | Loss: 0.1604
+[TRAIN] Epoch 0 | Shard 91 | Batch 70/100 | Loss: 0.1384
+[TRAIN] Epoch 0 | Shard 91 | Batch 80/100 | Loss: 0.1647
+[TRAIN] Epoch 0 | Shard 91 | Batch 90/100 | Loss: 0.2261
+[TRAIN] Epoch 0 | Shard 91 | Batch 100/100 | Loss: 0.1837
+
+[MILESTONE] Finished Shard 91. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.48% | Shard Loss: 0.1837
+--- Checkpoint Saved: Shard 91, Epoch 0, Loss 0.1837 ---
+[TRAIN] Epoch 0 | Shard 92 | Batch 10/100 | Loss: 0.1211
+[TRAIN] Epoch 0 | Shard 92 | Batch 20/100 | Loss: 0.1084
+[TRAIN] Epoch 0 | Shard 92 | Batch 30/100 | Loss: 0.1671
+[TRAIN] Epoch 0 | Shard 92 | Batch 40/100 | Loss: 0.1532
+[TRAIN] Epoch 0 | Shard 92 | Batch 50/100 | Loss: 0.1482
+[TRAIN] Epoch 0 | Shard 92 | Batch 60/100 | Loss: 0.2355
+[TRAIN] Epoch 0 | Shard 92 | Batch 70/100 | Loss: 0.1779
+[TRAIN] Epoch 0 | Shard 92 | Batch 80/100 | Loss: 0.2886
+[TRAIN] Epoch 0 | Shard 92 | Batch 90/100 | Loss: 0.1990
+[TRAIN] Epoch 0 | Shard 92 | Batch 100/100 | Loss: 0.1354
+
+[MILESTONE] Finished Shard 92. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.21% | Shard Loss: 0.1354
+--- Checkpoint Saved: Shard 92, Epoch 0, Loss 0.1354 ---
+[TRAIN] Epoch 0 | Shard 93 | Batch 10/100 | Loss: 0.1064
+[TRAIN] Epoch 0 | Shard 93 | Batch 20/100 | Loss: 0.1736
+[TRAIN] Epoch 0 | Shard 93 | Batch 30/100 | Loss: 0.1176
+[TRAIN] Epoch 0 | Shard 93 | Batch 40/100 | Loss: 0.2558
+[TRAIN] Epoch 0 | Shard 93 | Batch 50/100 | Loss: 0.1746
+[TRAIN] Epoch 0 | Shard 93 | Batch 60/100 | Loss: 0.1005
+[TRAIN] Epoch 0 | Shard 93 | Batch 70/100 | Loss: 0.0939
+[TRAIN] Epoch 0 | Shard 93 | Batch 80/100 | Loss: 0.1437
+[TRAIN] Epoch 0 | Shard 93 | Batch 90/100 | Loss: 0.1229
+[TRAIN] Epoch 0 | Shard 93 | Batch 100/100 | Loss: 0.0879
+
+[MILESTONE] Finished Shard 93. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.48% | Shard Loss: 0.0879
+--- Checkpoint Saved: Shard 93, Epoch 0, Loss 0.0879 ---
+[TRAIN] Epoch 0 | Shard 94 | Batch 10/100 | Loss: 0.2690
+[TRAIN] Epoch 0 | Shard 94 | Batch 20/100 | Loss: 0.1893
+[TRAIN] Epoch 0 | Shard 94 | Batch 30/100 | Loss: 0.0982
+[TRAIN] Epoch 0 | Shard 94 | Batch 40/100 | Loss: 0.1951
+[TRAIN] Epoch 0 | Shard 94 | Batch 50/100 | Loss: 0.1655
+[TRAIN] Epoch 0 | Shard 94 | Batch 60/100 | Loss: 0.1840
+[TRAIN] Epoch 0 | Shard 94 | Batch 70/100 | Loss: 0.0767
+[TRAIN] Epoch 0 | Shard 94 | Batch 80/100 | Loss: 0.1684
+[TRAIN] Epoch 0 | Shard 94 | Batch 90/100 | Loss: 0.2889
+[TRAIN] Epoch 0 | Shard 94 | Batch 100/100 | Loss: 0.2118
+
+[MILESTONE] Finished Shard 94. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.57% | Shard Loss: 0.2118
+--- Checkpoint Saved: Shard 94, Epoch 0, Loss 0.2118 ---
+[TRAIN] Epoch 0 | Shard 95 | Batch 10/100 | Loss: 0.2636
+[TRAIN] Epoch 0 | Shard 95 | Batch 20/100 | Loss: 0.2001
+[TRAIN] Epoch 0 | Shard 95 | Batch 30/100 | Loss: 0.0895
+[TRAIN] Epoch 0 | Shard 95 | Batch 40/100 | Loss: 0.2122
+[TRAIN] Epoch 0 | Shard 95 | Batch 50/100 | Loss: 0.1055
+[TRAIN] Epoch 0 | Shard 95 | Batch 60/100 | Loss: 0.1972
+[TRAIN] Epoch 0 | Shard 95 | Batch 70/100 | Loss: 0.1564
+[TRAIN] Epoch 0 | Shard 95 | Batch 80/100 | Loss: 0.1363
+[TRAIN] Epoch 0 | Shard 95 | Batch 90/100 | Loss: 0.2167
+[TRAIN] Epoch 0 | Shard 95 | Batch 100/100 | Loss: 0.1819
+
+[MILESTONE] Finished Shard 95. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.44% | Shard Loss: 0.1819
+--- Checkpoint Saved: Shard 95, Epoch 0, Loss 0.1819 ---
+[TRAIN] Epoch 0 | Shard 96 | Batch 10/100 | Loss: 0.2728
+[TRAIN] Epoch 0 | Shard 96 | Batch 20/100 | Loss: 0.1775
+[TRAIN] Epoch 0 | Shard 96 | Batch 30/100 | Loss: 0.1664
+[TRAIN] Epoch 0 | Shard 96 | Batch 40/100 | Loss: 0.1118
+[TRAIN] Epoch 0 | Shard 96 | Batch 50/100 | Loss: 0.1237
+[TRAIN] Epoch 0 | Shard 96 | Batch 60/100 | Loss: 0.1752
+[TRAIN] Epoch 0 | Shard 96 | Batch 70/100 | Loss: 0.2371
+[TRAIN] Epoch 0 | Shard 96 | Batch 80/100 | Loss: 0.0925
+[TRAIN] Epoch 0 | Shard 96 | Batch 90/100 | Loss: 0.1349
+[TRAIN] Epoch 0 | Shard 96 | Batch 100/100 | Loss: 0.1192
+
+[MILESTONE] Finished Shard 96. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.26% | Shard Loss: 0.1192
+--- Checkpoint Saved: Shard 96, Epoch 0, Loss 0.1192 ---
+[TRAIN] Epoch 0 | Shard 97 | Batch 10/100 | Loss: 0.2069
+[TRAIN] Epoch 0 | Shard 97 | Batch 20/100 | Loss: 0.2178
+[TRAIN] Epoch 0 | Shard 97 | Batch 30/100 | Loss: 0.1480
+[TRAIN] Epoch 0 | Shard 97 | Batch 40/100 | Loss: 0.1422
+[TRAIN] Epoch 0 | Shard 97 | Batch 50/100 | Loss: 0.1610
+[TRAIN] Epoch 0 | Shard 97 | Batch 60/100 | Loss: 0.1866
+[TRAIN] Epoch 0 | Shard 97 | Batch 70/100 | Loss: 0.1324
+[TRAIN] Epoch 0 | Shard 97 | Batch 80/100 | Loss: 0.1227
+[TRAIN] Epoch 0 | Shard 97 | Batch 90/100 | Loss: 0.2013
+[TRAIN] Epoch 0 | Shard 97 | Batch 100/100 | Loss: 0.1334
+
+[MILESTONE] Finished Shard 97. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.33% | Shard Loss: 0.1334
+--- Checkpoint Saved: Shard 97, Epoch 0, Loss 0.1334 ---
+[TRAIN] Epoch 0 | Shard 98 | Batch 10/100 | Loss: 0.1881
+[TRAIN] Epoch 0 | Shard 98 | Batch 20/100 | Loss: 0.1470
+[TRAIN] Epoch 0 | Shard 98 | Batch 30/100 | Loss: 0.1400
+[TRAIN] Epoch 0 | Shard 98 | Batch 40/100 | Loss: 0.1230
+[TRAIN] Epoch 0 | Shard 98 | Batch 50/100 | Loss: 0.1545
+[TRAIN] Epoch 0 | Shard 98 | Batch 60/100 | Loss: 0.1175
+[TRAIN] Epoch 0 | Shard 98 | Batch 70/100 | Loss: 0.1792
+[TRAIN] Epoch 0 | Shard 98 | Batch 80/100 | Loss: 0.0625
+[TRAIN] Epoch 0 | Shard 98 | Batch 90/100 | Loss: 0.1545
+[TRAIN] Epoch 0 | Shard 98 | Batch 100/100 | Loss: 0.0746
+
+[MILESTONE] Finished Shard 98. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.53% | Shard Loss: 0.0746
+--- Checkpoint Saved: Shard 98, Epoch 0, Loss 0.0746 ---
+[TRAIN] Epoch 0 | Shard 99 | Batch 10/100 | Loss: 0.1644
+[TRAIN] Epoch 0 | Shard 99 | Batch 20/100 | Loss: 0.1780
+[TRAIN] Epoch 0 | Shard 99 | Batch 30/100 | Loss: 0.1246
+[TRAIN] Epoch 0 | Shard 99 | Batch 40/100 | Loss: 0.1205
+[TRAIN] Epoch 0 | Shard 99 | Batch 50/100 | Loss: 0.1248
+[TRAIN] Epoch 0 | Shard 99 | Batch 60/100 | Loss: 0.1409
+[TRAIN] Epoch 0 | Shard 99 | Batch 70/100 | Loss: 0.1133
+[TRAIN] Epoch 0 | Shard 99 | Batch 80/100 | Loss: 0.1278
+[TRAIN] Epoch 0 | Shard 99 | Batch 90/100 | Loss: 0.0912
+[TRAIN] Epoch 0 | Shard 99 | Batch 100/100 | Loss: 0.1533
+
+[MILESTONE] Finished Shard 99. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.53% | Shard Loss: 0.1533
+--- Checkpoint Saved: Shard 99, Epoch 0, Loss 0.1533 ---
+[TRAIN] Epoch 0 | Shard 100 | Batch 10/100 | Loss: 0.1742
+[TRAIN] Epoch 0 | Shard 100 | Batch 20/100 | Loss: 0.1140
+[TRAIN] Epoch 0 | Shard 100 | Batch 30/100 | Loss: 0.1807
+[TRAIN] Epoch 0 | Shard 100 | Batch 40/100 | Loss: 0.1154
+[TRAIN] Epoch 0 | Shard 100 | Batch 50/100 | Loss: 0.1875
+[TRAIN] Epoch 0 | Shard 100 | Batch 60/100 | Loss: 0.1763
+[TRAIN] Epoch 0 | Shard 100 | Batch 70/100 | Loss: 0.1744
+[TRAIN] Epoch 0 | Shard 100 | Batch 80/100 | Loss: 0.1198
+[TRAIN] Epoch 0 | Shard 100 | Batch 90/100 | Loss: 0.2002
+[TRAIN] Epoch 0 | Shard 100 | Batch 100/100 | Loss: 0.1176
+
+[MILESTONE] Finished Shard 100. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.75% | Shard Loss: 0.1176
+--- Checkpoint Saved: Shard 100, Epoch 0, Loss 0.1176 ---
+[TRAIN] Epoch 0 | Shard 101 | Batch 10/100 | Loss: 0.1263
+[TRAIN] Epoch 0 | Shard 101 | Batch 20/100 | Loss: 0.1451
+[TRAIN] Epoch 0 | Shard 101 | Batch 30/100 | Loss: 0.1051
+[TRAIN] Epoch 0 | Shard 101 | Batch 40/100 | Loss: 0.1048
+[TRAIN] Epoch 0 | Shard 101 | Batch 50/100 | Loss: 0.1045
+[TRAIN] Epoch 0 | Shard 101 | Batch 60/100 | Loss: 0.1983
+[TRAIN] Epoch 0 | Shard 101 | Batch 70/100 | Loss: 0.1351
+[TRAIN] Epoch 0 | Shard 101 | Batch 80/100 | Loss: 0.1165
+[TRAIN] Epoch 0 | Shard 101 | Batch 90/100 | Loss: 0.1288
+[TRAIN] Epoch 0 | Shard 101 | Batch 100/100 | Loss: 0.2070
+
+[MILESTONE] Finished Shard 101. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.62% | Shard Loss: 0.2070
+--- Checkpoint Saved: Shard 101, Epoch 0, Loss 0.2070 ---
+[TRAIN] Epoch 0 | Shard 102 | Batch 10/100 | Loss: 0.0718
+[TRAIN] Epoch 0 | Shard 102 | Batch 20/100 | Loss: 0.1534
+[TRAIN] Epoch 0 | Shard 102 | Batch 30/100 | Loss: 0.1016
+[TRAIN] Epoch 0 | Shard 102 | Batch 40/100 | Loss: 0.0802
+[TRAIN] Epoch 0 | Shard 102 | Batch 50/100 | Loss: 0.2445
+[TRAIN] Epoch 0 | Shard 102 | Batch 60/100 | Loss: 0.1682
+[TRAIN] Epoch 0 | Shard 102 | Batch 70/100 | Loss: 0.1544
+[TRAIN] Epoch 0 | Shard 102 | Batch 80/100 | Loss: 0.1513
+[TRAIN] Epoch 0 | Shard 102 | Batch 90/100 | Loss: 0.1299
+[TRAIN] Epoch 0 | Shard 102 | Batch 100/100 | Loss: 0.1146
+
+[MILESTONE] Finished Shard 102. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.73% | Shard Loss: 0.1146
+--- Checkpoint Saved: Shard 102, Epoch 0, Loss 0.1146 ---
+[TRAIN] Epoch 0 | Shard 103 | Batch 10/100 | Loss: 0.1616
+[TRAIN] Epoch 0 | Shard 103 | Batch 20/100 | Loss: 0.1481
+[TRAIN] Epoch 0 | Shard 103 | Batch 30/100 | Loss: 0.2528
+[TRAIN] Epoch 0 | Shard 103 | Batch 40/100 | Loss: 0.1081
+[TRAIN] Epoch 0 | Shard 103 | Batch 50/100 | Loss: 0.1572
+[TRAIN] Epoch 0 | Shard 103 | Batch 60/100 | Loss: 0.0702
+[TRAIN] Epoch 0 | Shard 103 | Batch 70/100 | Loss: 0.1270
+[TRAIN] Epoch 0 | Shard 103 | Batch 80/100 | Loss: 0.1032
+[TRAIN] Epoch 0 | Shard 103 | Batch 90/100 | Loss: 0.1725
+[TRAIN] Epoch 0 | Shard 103 | Batch 100/100 | Loss: 0.1867
+
+[MILESTONE] Finished Shard 103. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.71% | Shard Loss: 0.1867
+--- Checkpoint Saved: Shard 103, Epoch 0, Loss 0.1867 ---
+[TRAIN] Epoch 0 | Shard 104 | Batch 10/100 | Loss: 0.1782
+[TRAIN] Epoch 0 | Shard 104 | Batch 20/100 | Loss: 0.1229
+[TRAIN] Epoch 0 | Shard 104 | Batch 30/100 | Loss: 0.0670
+[TRAIN] Epoch 0 | Shard 104 | Batch 40/100 | Loss: 0.1273
+[TRAIN] Epoch 0 | Shard 104 | Batch 50/100 | Loss: 0.0886
+[TRAIN] Epoch 0 | Shard 104 | Batch 60/100 | Loss: 0.1321
+[TRAIN] Epoch 0 | Shard 104 | Batch 70/100 | Loss: 0.1900
+[TRAIN] Epoch 0 | Shard 104 | Batch 80/100 | Loss: 0.0981
+[TRAIN] Epoch 0 | Shard 104 | Batch 90/100 | Loss: 0.1384
+[TRAIN] Epoch 0 | Shard 104 | Batch 100/100 | Loss: 0.0909
+
+[MILESTONE] Finished Shard 104. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.59% | Shard Loss: 0.0909
+--- Checkpoint Saved: Shard 104, Epoch 0, Loss 0.0909 ---
+[TRAIN] Epoch 0 | Shard 105 | Batch 10/100 | Loss: 0.1836
+[TRAIN] Epoch 0 | Shard 105 | Batch 20/100 | Loss: 0.1649
+[TRAIN] Epoch 0 | Shard 105 | Batch 30/100 | Loss: 0.1125
+[TRAIN] Epoch 0 | Shard 105 | Batch 40/100 | Loss: 0.1031
+[TRAIN] Epoch 0 | Shard 105 | Batch 50/100 | Loss: 0.2243
+[TRAIN] Epoch 0 | Shard 105 | Batch 60/100 | Loss: 0.1903
+[TRAIN] Epoch 0 | Shard 105 | Batch 70/100 | Loss: 0.1308
+[TRAIN] Epoch 0 | Shard 105 | Batch 80/100 | Loss: 0.0712
+[TRAIN] Epoch 0 | Shard 105 | Batch 90/100 | Loss: 0.0860
+[TRAIN] Epoch 0 | Shard 105 | Batch 100/100 | Loss: 0.1113
+
+[MILESTONE] Finished Shard 105. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.84% | Shard Loss: 0.1113
+--- Checkpoint Saved: Shard 105, Epoch 0, Loss 0.1113 ---
+[TRAIN] Epoch 0 | Shard 106 | Batch 10/100 | Loss: 0.1297
+[TRAIN] Epoch 0 | Shard 106 | Batch 20/100 | Loss: 0.1063
+[TRAIN] Epoch 0 | Shard 106 | Batch 30/100 | Loss: 0.1690
+[TRAIN] Epoch 0 | Shard 106 | Batch 40/100 | Loss: 0.1883
+[TRAIN] Epoch 0 | Shard 106 | Batch 50/100 | Loss: 0.1298
+[TRAIN] Epoch 0 | Shard 106 | Batch 60/100 | Loss: 0.1676
+[TRAIN] Epoch 0 | Shard 106 | Batch 70/100 | Loss: 0.1621
+[TRAIN] Epoch 0 | Shard 106 | Batch 80/100 | Loss: 0.2534
+[TRAIN] Epoch 0 | Shard 106 | Batch 90/100 | Loss: 0.0987
+[TRAIN] Epoch 0 | Shard 106 | Batch 100/100 | Loss: 0.1074
+
+[MILESTONE] Finished Shard 106. Validating...
+[VAL] Evaluating on 4480 images...
+[RESULT] Accuracy: 93.82% | Shard Loss: 0.1074
+--- Checkpoint Saved: Shard 106, Epoch 0, Loss 0.1074 ---
+[TRAIN] Epoch 0 | Shard 107 | Batch 10/100 | Loss: 0.1507
+[TRAIN] Epoch 0 | Shard 107 | Batch 20/100 | Loss: 0.2571
